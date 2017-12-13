@@ -13,14 +13,34 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+
+  /*
+  ** Vue Plugins
+  ** https://nuxtjs.org/guide/plugins
+  */
+  plugins: [
+    '~/plugins/vue-parallax-js',
+    { src: '~/plugins/vue-parallax-js', ssr: false },
+    // '~/plugins/rellax',
+    // '~/plugins/vue-resize'
+  ],
+
   /*
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
+
   /*
   ** Build configuration
   */
   build: {
+    vendor: [
+      'axios',
+      'vue-parallax-js'
+      // 'rellax'
+      // '~/node_modules/rellax/rellax.js'
+    ],
+
     /*
     ** Run ESLint on save
     */
