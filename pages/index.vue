@@ -10,8 +10,8 @@
 
         <!-- HEADER -->
         <header>
-          <h1 v-parallax="0.2">Bringt uns unsere Tassen zurück!</h1>
-          <!-- <h1 class="rellax">Bringt uns unsere Tassen zurück!</h1> -->
+          <!-- <h1 v-parallax="0.2">Bringt uns unsere Tassen zurück!</h1> -->
+          <h1 class="rellax">Bringt uns unsere Tassen zurück!</h1>
         </header>
 
         <!-- TEXT -->

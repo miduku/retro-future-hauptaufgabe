@@ -19,10 +19,7 @@ module.exports = {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    '~/plugins/vue-parallax-js',
-    { src: '~/plugins/vue-parallax-js', ssr: false },
-    // '~/plugins/rellax',
-    // '~/plugins/vue-resize'
+    { src: '~/plugins/rellax', ssr: false },
   ],
 
   /*
@@ -36,9 +33,7 @@ module.exports = {
   build: {
     vendor: [
       'axios',
-      'vue-parallax-js'
-      // 'rellax'
-      // '~/node_modules/rellax/rellax.js'
+      'rellax'
     ],
 
     /*
