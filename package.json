@@ -17,7 +17,8 @@
     "axios": "^0.17.1",
     "nuxt": "^1.0.0-rc11",
     "rellax": "^1.4.0",
-    "vue-resize": "^0.4.3"
+    "vue-resize": "^0.4.3",
+    "vue-scrollmonitor": "^0.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",

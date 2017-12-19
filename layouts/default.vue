@@ -6,6 +6,11 @@
 
 <script>
 export default {
+  // components: {
+  //   ScrollContainer,
+  //   ScrollItem
+  // },
+
   data () {
     return {
       constDeg: Number,
@@ -24,10 +29,10 @@ export default {
       this.docWidth()
       this.docHeight()
 
-      let elsRotate = this.$el.querySelectorAll('.rotate')
-      for (const el of elsRotate) {
-        el.style.transform = `rotate(${this.deg}deg)`
-      }
+      // let elsRotate = this.$el.querySelectorAll('.rotate')
+      // for (const el of elsRotate) {
+      //   el.style.transform = `rotate(${this.deg}deg)`
+      // }
 
       let elsTranslate = this.$el.querySelectorAll('.translate')
       for (const el of elsTranslate) {
@@ -39,8 +44,9 @@ export default {
         for (const wrapper of el.children) {
           for (const child of wrapper.children) {
             let content = child.innerHTML
-            child.style.transform = `translateX(${this.randomizer(-10, 10)}rem) rotate(${-1 * this.deg}deg)`
-            child.innerHTML = `<span>${content}</span>`
+            // child.style.transform = `translateX(${this.randomizer(-10, 10)}rem) rotate(${-1 * this.deg}deg)`
+            child.style.transform = `translateX(${this.randomizer(-10, 10)}rem)`
+            child.innerHTML = `<span style="background: rgba()">${content}</span>`
           }
         }
       }
@@ -48,18 +54,22 @@ export default {
   },
 
   beforeMount () {
-    window.addEventListener('mousemove', this.handleMouseCoords)
+    window.addEventListener('mousemove', this.handleMouseMove)
     window.addEventListener('resize', this.handleResize)
-    window.addEventListener('wheel', this.handleWheel)
+    window.addEventListener('scroll', this.handleScroll)
   },
 
   beforeDestroy () {
-    window.removeEventListener('mousemove', this.handleMouseCoords)
+    window.removeEventListener('mousemove', this.handleMouseMove)
     window.removeEventListener('resize', this.handleResize)
-    window.removeEventListener('wheel', this.handleWheel)
+    window.removeEventListener('scroll', this.handleScroll)
   },
 
   methods: {
+    test () {
+      console.log('test')
+    },
+
     randomizer (min, max) {
       return Math.random() * (max - min) + min
     },
@@ -68,7 +78,7 @@ export default {
       return ((value - domainMin) / (domainMax - domainMin)) * (rangeMax - rangeMin) + rangeMin
     },
 
-    handleMouseCoords (e) {
+    handleMouseMove (e) {
       let x, y
       let doc = {
         w: this.docWidth(),
@@ -99,12 +109,21 @@ export default {
     },
 
     handleResize (e) {
+      this.getDocSize()
+    },
+
+    handleScroll (e) {
+      // console.log(e)
+      this.docHeight()
+    },
+
+    getDocSize () {
       this.docWidth()
       this.docHeight()
     },
 
-    handleWheel (e) {
-      console.log(e)
+    getScrollTop () {
+      return document.documentElement.scrollTop
     },
 
     docWidth () {
@@ -115,12 +134,12 @@ export default {
     docHeight () {
       // console.log(document.documentElement.clientHeight)
       return document.documentElement.clientHeight
-    },
+    }
 
     // Vuex Stuff (Store)
-    setStoreMouseCoords (coords) {
-      this.$store.commit('newMouseCoords', coords)
-    }
+    // setStoreMouseCoords (coords) {
+    //   this.$store.commit('newMouseCoords', coords)
+    // }
   }
 }
 </script>
@@ -230,22 +249,23 @@ p {
           }
         }
 
-        .text {
-          mix-blend-mode: multiply;
+        // .text {
+        //   mix-blend-mode: multiply;
 
-          p {
-            letter-spacing: .02em;
-            span {
-              // background: #fff;
+        //   p {
+        //     letter-spacing: .02em;
 
-              &::before {
-                content: '';
-                background: green;
-                display: inline;
-              }
-            }
-          }
-        }
+        //     span {
+        //       background: #fff;
+
+        //       // &::before {
+        //       //   content: '';
+        //       //   background: green;
+        //       //   display: inline;
+        //       // }
+        //     }
+        //   }
+        // }
 
     }
   }

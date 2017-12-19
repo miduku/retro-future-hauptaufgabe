@@ -1,4 +1,4 @@
-// https://github.com/jsnanigans/vue-parallax-js
+// https://github.com/AlexandreBonaventure/vue-scrollmonitor
 import Vue from 'vue'
 import VueParallaxJs from '~/node_modules/vue-parallax-js/lib/vue-parallax-js.es'
 // import VueParallaxJs from 'vue-parallax-js'

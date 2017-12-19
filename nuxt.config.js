@@ -20,6 +20,7 @@ module.exports = {
   */
   plugins: [
     { src: '~/plugins/rellax', ssr: false },
+    { src: '~/plugins/vue-scrollmonitor' }
   ],
 
   /*
@@ -33,7 +34,8 @@ module.exports = {
   build: {
     vendor: [
       'axios',
-      'rellax'
+      'rellax',
+      'vue-scrollmonitor'
     ],
 
     /*
