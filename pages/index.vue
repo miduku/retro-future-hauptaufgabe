@@ -7,13 +7,23 @@
         <!-- <img src="http://semikolon-fhp.de/wp-content/uploads/2017/08/cafeteria.jpg" alt=""> -->
       </div>
 
+      <div class="polygon">
+        <svg width="100%" height="100%" viewBox="0 0 100 100"
+          style="fill: #fff"
+          preserveAspectRatio="none"
+          xmlns="http://www.w3.org/2000/svg">
+
+          <polygon points="0,0 0,100 100,100 100,0"/>
+        </svg>
+      </div>
 
       <div class="m-wrapper m-wrapper-01">
+
         <div class="content rotate">
           <!-- HEADER -->
           <header class="translate">
             <div class="m-wrapper m-wrapper-02">
-              <h1 class="rellax font-title" data-rellax-speed="7">Bringt uns unsere Tassen zurück!</h1>
+              <h1 class="rellax font-title" data-rellax-speed="7">Bringt uns unsere <span class="rellax" style="display: inline-block" data-rellax-speed="2">Tassen</span> zurück!</h1>
             </div>
           </header>
 
@@ -58,5 +68,14 @@ export default {
 <style lang="scss" scoped>
 .background {
   background-image: url('http://semikolon-fhp.de/wp-content/uploads/2017/08/cafeteria.jpg');
+}
+
+.polygon {
+  position: fixed;
+  // background: #fff;
+  width: 75%;
+  height: 75vh;
+  left: 25% * 0.5;
+  top: 25% * 0.5;
 }
 </style>

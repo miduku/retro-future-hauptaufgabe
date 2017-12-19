@@ -50,11 +50,13 @@ export default {
   beforeMount () {
     window.addEventListener('mousemove', this.handleMouseCoords)
     window.addEventListener('resize', this.handleResize)
+    window.addEventListener('wheel', this.handleWheel)
   },
 
   beforeDestroy () {
     window.removeEventListener('mousemove', this.handleMouseCoords)
     window.removeEventListener('resize', this.handleResize)
+    window.removeEventListener('wheel', this.handleWheel)
   },
 
   methods: {
@@ -101,6 +103,10 @@ export default {
       this.docHeight()
     },
 
+    handleWheel (e) {
+      console.log(e)
+    },
+
     docWidth () {
       // console.log(document.documentElement.clientWidth)
       return document.documentElement.clientWidth
@@ -121,7 +127,7 @@ export default {
 
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,400i,900,900i|Playfair+Display:400,700|Zilla+Slab:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,400i,900,900i|Playfair+Display:400,700|PT+Serif:400,400i,700,700i');
 
 /**
 * GLOBAL
@@ -133,7 +139,8 @@ export default {
 
 html {
   // font-family: "Inter UI", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-family: 'Zilla Slab', serif;
+  // font-family: 'Zilla Slab', serif;
+  font-family: 'PT Serif', serif;
   font-size: 16px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -145,7 +152,7 @@ html {
 
 body {
   font-size: 1.25rem;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 img {
@@ -197,14 +204,14 @@ p {
 
     .content {
       width: 100% - 100/2;
-      max-width: 800px;
+      max-width: 700px;
       margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
-      background: #fff;
-      margin-top: -25vh;
-      margin-bottom: -25vh;
-      padding: 35vh 0 25vh;
+      // background: #fff;
+      // margin-top: -25vh;
+      // margin-bottom: -25vh;
+      // padding: 35vh 0 25vh;
 
         header,
         .text {
@@ -227,8 +234,9 @@ p {
           mix-blend-mode: multiply;
 
           p {
+            letter-spacing: .02em;
             span {
-              background: #fff;
+              // background: #fff;
 
               &::before {
                 content: '';
