@@ -15,12 +15,18 @@ module.exports = {
   },
 
   /*
+  ** global CSS
+  */
+  css: [
+    '~/assets/css/index.scss'
+  ],
+
+  /*
   ** Vue Plugins
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    { src: '~/plugins/rellax', ssr: false },
-    { src: '~/plugins/vue-scrollmonitor' }
+    { src: '~/plugins/rellax', ssr: false }
   ],
 
   /*
@@ -34,8 +40,7 @@ module.exports = {
   build: {
     vendor: [
       'axios',
-      'rellax',
-      'vue-scrollmonitor'
+      'rellax'
     ],
 
     /*
