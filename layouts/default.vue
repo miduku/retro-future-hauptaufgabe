@@ -6,6 +6,11 @@
 
 <script>
 export default {
+  data () {
+    return {
+    }
+  },
+
   mounted () {
     // DOM ready
     this.$nextTick(() => {
@@ -15,13 +20,13 @@ export default {
   },
 
   beforeMount () {
-    window.addEventListener('mousemove', this.handleMouseMove)
+    // window.addEventListener('mousemove', this.handleMouseMove)
     window.addEventListener('resize', this.handleResize)
     // window.addEventListener('scroll', this.handleScroll)
   },
 
   beforeDestroy () {
-    window.removeEventListener('mousemove', this.handleMouseMove)
+    // window.removeEventListener('mousemove', this.handleMouseMove)
     window.removeEventListener('resize', this.handleResize)
     // window.removeEventListener('scroll', this.handleScroll)
   },
@@ -46,31 +51,49 @@ export default {
     },
 
     handleMouseMove (e) {
-      let x, y
+      const mWrappers = this.$el.querySelectorAll('.m-wrapper')
+      let x = this.getMousePos(e).x
+      let y = this.getMousePos(e).y
+
       let doc = {
         w: this.docWidth(),
         h: this.docHeight()
       }
+
+      let docHalf = [doc.w / 2, doc.h / 2]
+
+      let wrapperPos = {
+        x: docHalf[0] - x,
+        y: docHalf[1] - y
+      }
+
+      // replace with https://github.com/wagerfield/parallax
+      moveWrappers()
+
+      function moveWrappers () {
+        for (const wrapper of mWrappers) {
+          if (wrapper.classList.contains('m-wrapper-01')) {
+            wrapper.style.transform = `translate(${(wrapperPos.x) * 0.075}px, ${(wrapperPos.y) * 0.075}px)`
+          } else if (wrapper.classList.contains('m-wrapper-02')) {
+            wrapper.style.transform = `translate(${(wrapperPos.x) * 0.05}px, ${(wrapperPos.y) * 0.05}px)`
+          } else if (wrapper.classList.contains('m-wrapper-03')) {
+            wrapper.style.transform = `translate(${(wrapperPos.x) * 0.025}px, ${(wrapperPos.y) * 0.025}px)`
+          } else if (wrapper.classList.contains('m-wrapper-04')) {
+            wrapper.style.transform = `translate(${(wrapperPos.x) * 0.025}px, ${(wrapperPos.y) * 0.01}px)`
+          }
+        }
+      }
+    },
+
+    getMousePos (e) {
+      let x, y
 
       if (typeof e.clientX !== 'undefined' && typeof e.clientX !== 'undefined') {
         x = e.clientX
         y = e.clientY
       }
 
-      let docHalf = [doc.w / 2, doc.h / 2]
-
-      const mWrappers = this.$el.querySelectorAll('.m-wrapper')
-      for (const wrapper of mWrappers) {
-        if (wrapper.classList.contains('m-wrapper-01')) {
-          wrapper.style.transform = `translate(${(docHalf[0] - x) * 0.075}px, ${(docHalf[1] - y) * 0.075}px)`
-        } else if (wrapper.classList.contains('m-wrapper-02')) {
-          wrapper.style.transform = `translate(${(docHalf[0] - x) * 0.05}px, ${(docHalf[1] - y) * 0.05}px)`
-        } else if (wrapper.classList.contains('m-wrapper-03')) {
-          wrapper.style.transform = `translate(${(docHalf[0] - x) * 0.025}px, ${(docHalf[1] - y) * 0.025}px)`
-        } else if (wrapper.classList.contains('m-wrapper-04')) {
-          wrapper.style.transform = `translate(${(docHalf[0] - x) * 0.025}px, ${(docHalf[1] - y) * 0.01}px)`
-        }
-      }
+      return {x, y}
     },
 
     setParagrafsTransform () {
@@ -78,7 +101,7 @@ export default {
       // console.log(elsText)
 
       for (const article of articles) {
-        article.style.transform = `translateX(${this.randomizer(-7, 7)}em)`
+        article.style.transform = `translate(${this.randomizer(-20, 20)}vw, ${this.randomizer(-5, 5)}vh)`
       }
     },
 
@@ -100,6 +123,11 @@ export default {
 @import '../assets/css/_vars';
 @import '../assets/css/_mixins';
 
+.m-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
 .container {
   .content {
     position: relative;
@@ -111,13 +139,60 @@ export default {
     justify-content: center;
 
     article {
-      position: relative;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      align-items: center;
-      margin: .5rem;
-      width: 75%;
+      display: block;
+      width: 100%;
+
+      > a {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin: 2.25em auto;
+        width: 75%;
+        pointer-events: all;
+
+        .font-title {
+          span {
+            background: #fff;
+            transition: $transition;
+          }
+        }
+
+        .text {
+          line-height: .25;
+          transform: translateY(-1.125em);
+
+          p {
+            background-color: transparent;
+            background-image: linear-gradient(transparent .5em, $black 0, $black 1em, transparent 0);
+            transition: $transition;
+          }
+        }
+
+        @include widescreen {
+          // margin: 2rem auto;
+        }
+
+        &:focus,
+        &:hover {
+          .font-title {
+            span {
+              background: transparent;
+            }
+          }
+
+          .text {
+            line-height: inherit;
+            transform: translateY(0);
+
+            p {
+              background-color: #fff;
+              background-image: none;
+            }
+          }
+        }
+      }
     }
 
       .background {
@@ -128,34 +203,59 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        left: 0;
+        top: 0;
 
         > * {
-          width: 25%;
-          max-width: 200px;
+          width: 70%;
+          margin: 0 auto;
+          display: block;
+          // max-width: 200px;
         }
       }
 
       header {
         // position: absolute;
-        padding: 4rem 0;
+        margin: 6em 0;
         z-index: 2;
         text-align: center;
-        mix-blend-mode: multiply;
+        width: 100%;
+        // mix-blend-mode: multiply;
+
+        @include desktop {
+          margin: 5em 0;
+        }
 
         .font-title {
           // font-size: 2.75rem;
-          font-size: 2em;
+          font-size: 1.8em;
           transform: scale(1.5);
           line-height: 1;
 
           @include widescreen {
-            font-size: 2rem;
+            // font-size: 1.8rem;
           }
 
           span {
-            // background: #fff;
             // line-height: .75;
             display: inline;
+          }
+        }
+
+        .meta {
+          // background: green;
+
+          .author {
+            position: absolute;
+            left: -2em;
+            bottom: 2em;
+            transform: rotateZ(180deg);
+            background: #fff;
+            display: inline-block;
+
+            @include widescreen {
+              // font-size: 1.2rem;
+            }
           }
         }
       }
@@ -169,18 +269,31 @@ export default {
         align-items: center;
         text-align: center;
         z-index: 3;
+        line-height: 1.25;
+        left: 0;
+        top: 0;
+
+        .p-wrapper {
+          display: inline-block;
+        }
 
         p {
           font-size: .8em;
+          display: inline;
 
           @include widescreen {
-            font-size: 1rem;
+            // font-size: 1rem;
           }
 
-
-          span {
-            // background: #000;
-          }
+          // &::after {
+          //   content: '';
+          //   // border-bottom: .5em solid #000;
+          //   background: $black;
+          //   // position: absolute;
+          //   bottom: .25em;
+          //   top: 0;
+          //   left: 0;
+          // }
         }
       }
   }

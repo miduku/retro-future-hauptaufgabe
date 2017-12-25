@@ -26,7 +26,8 @@ module.exports = {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    { src: '~/plugins/rellax', ssr: false }
+    { src: '~/plugins/rellax', ssr: false },
+    { src: '~/plugins/parallax-js', ssr: false }
   ],
 
   /*
@@ -40,7 +41,8 @@ module.exports = {
   build: {
     vendor: [
       'axios',
-      'rellax'
+      'rellax',
+      'parallax-js'
     ],
 
     /*

@@ -57,7 +57,7 @@ export default {
 
 <style lang="scss" scoped>
 .background {
-  background-image: url('http://semikolon-fhp.de/wp-content/uploads/2017/08/cafeteria.jpg');
+  background-image: url('/img/tassen-zurueck.jpg');
 }
 
 .text {

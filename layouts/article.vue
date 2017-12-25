@@ -201,13 +201,25 @@ export default {
             display: inline-block;
             position: sticky;
             top: 1px;
+            // position: relative;
 
             @include widescreen {
               font-size: 1rem;
             }
 
+            // &:first-child:first-letter {
+            //   // color: #fff;
+            //   // font-family: 'Playfair Display', serif !important;
+            //   // font-family: 'Barlow Semi Condensed', serif !important;
+            //   font-size: 500%;
+            //   float: left;
+            //   position: absolute;
+            //   right: 0
+            // }
+
             span {
               background: #fff;
+              // position: relative;
             }
           }
         }

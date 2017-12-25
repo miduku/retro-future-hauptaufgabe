@@ -6,8 +6,14 @@
 // Vue.use(Rellax)
 // export default Rellax
 
+const el = document.querySelectorAll('.rellax')
 let Rellax
+
 if (process.browser) {
   Rellax = require('rellax')
 }
-Rellax('.rellax')
+
+// check if element exists
+if (el[0]) {
+  Rellax('.rellax')
+}

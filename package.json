@@ -16,6 +16,7 @@
     "animejs": "^2.2.0",
     "axios": "^0.17.1",
     "nuxt": "^1.0.0-rc11",
+    "parallax-js": "^3.1.0",
     "rellax": "^1.4.0",
     "vue-resize": "^0.4.3"
   },

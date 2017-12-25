@@ -20,6 +20,7 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   overflow-x: hidden;
+  color: $black;
 }
 
 body {
@@ -27,6 +28,10 @@ body {
   font-size: 2vw;
   line-height: 1.6;
   overflow: initial;
+
+  @include widescreen {
+    font-size: 1em;
+  }
 }
 
 img {
@@ -49,6 +54,16 @@ p {
 
   &::last-child {
     margin-bottom: 0;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
   }
 }
 
@@ -77,6 +92,10 @@ p {
       }
     }
   }
+}
+
+.m-wrapper {
+  transform: translate(0, 0); // fix for mix-blend bug
 }
 
 .page-enter-active, .page-leave-active {
