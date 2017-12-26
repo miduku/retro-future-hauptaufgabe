@@ -75,6 +75,10 @@ a {
   .content {
     margin: 0 auto;
 
+    article {
+      transition: $transition;
+    }
+
     header {
       position: relative;
 
@@ -96,6 +100,8 @@ a {
 
 .m-wrapper {
   transform: translate(0, 0); // fix for mix-blend bug
+  width: 100%;
+  height: 100%;
 }
 
 .page-enter-active, .page-leave-active {

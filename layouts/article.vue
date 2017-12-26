@@ -1,10 +1,12 @@
 <template>
-  <div>
+  <div id="tp-article">
     <nuxt/>
   </div>
 </template>
 
 <script>
+import Parallax from 'parallax-js'
+
 export default {
   data () {
     return {
@@ -15,20 +17,21 @@ export default {
     // DOM ready
     this.$nextTick(() => {
       // init
-      this.setParagrafsFixed()
-      this.setParagrafsTransform()
+      this.setParallax()
+      this.setParagrafsTopFixed()
+      this.setParagrafsXTransform()
     })
   },
 
   beforeMount () {
-    window.addEventListener('mousemove', this.handleMouseMove)
-    window.addEventListener('resize', this.handleResize)
+    // window.addEventListener('mousemove', this.handleMouseMove)
+    // window.addEventListener('resize', this.handleResize)
     window.addEventListener('scroll', this.handleScroll)
   },
 
   beforeDestroy () {
-    window.removeEventListener('mousemove', this.handleMouseMove)
-    window.removeEventListener('resize', this.handleResize)
+    // window.removeEventListener('mousemove', this.handleMouseMove)
+    // window.removeEventListener('resize', this.handleResize)
     window.removeEventListener('scroll', this.handleScroll)
   },
 
@@ -45,70 +48,50 @@ export default {
       return ((value - domainMin) / (domainMax - domainMin)) * (rangeMax - rangeMin) + rangeMin
     },
 
-    handleMouseMove (e) {
-      let x, y
-      let doc = {
-        w: this.docWidth(),
-        h: this.docHeight()
-      }
-
-      if (typeof e.clientX !== 'undefined' && typeof e.clientX !== 'undefined') {
-        x = e.clientX
-        y = e.clientY
-      }
-
-      let docHalf = [doc.w / 2, doc.h / 2]
-
-      const mWrappers = this.$el.querySelectorAll('.m-wrapper')
-      for (const wrapper of mWrappers) {
-        if (wrapper.classList.contains('m-wrapper-01')) {
-          wrapper.style.transform = `translate(${(docHalf[0] - x) * 0.075}px, ${(docHalf[1] - y) * 0.075}px)`
-        } else if (wrapper.classList.contains('m-wrapper-02')) {
-          wrapper.style.transform = `translate(${(docHalf[0] - x) * 0.05}px, ${(docHalf[1] - y) * 0.05}px)`
-        } else if (wrapper.classList.contains('m-wrapper-03')) {
-          wrapper.style.transform = `translate(${(docHalf[0] - x) * 0.025}px, ${(docHalf[1] - y) * 0.025}px)`
-        }
-      }
-    },
-
     handleResize (e) {
       // this.getDocSize()
     },
 
     handleScroll (e) {
-      // console.log(e)
-      // this.docHeight()
-      // let top = this.$el.querySelector('.text')
       // console.log(top.getBoundingClientRect().top)
-      this.setParagrafsFixed()
+      this.setParagrafsTopFixed()
     },
 
-    setParagrafsFixed () {
+    setParallax () {
+      const scene = document.getElementById('scene')
+
+      // check if elements exist
+      if (scene) {
+        const prllx = new Parallax(scene)
+        prllx.friction(0.1, 0.1)
+        console.log(prllx)
+      }
+    },
+
+    setParagrafsTopFixed () {
       const elsText = this.$el.querySelectorAll('.text')
       const clientHeightHalf = this.docHeight() / 4
 
       for (const el of elsText) {
-        for (const wrapper of el.children) {
-          for (const p of wrapper.children) {
-            let pBounding = p.getBoundingClientRect()
-            if (pBounding.top >= 0) {
-              if (pBounding.top < clientHeightHalf) {
-                let lineHeight = this.map(pBounding.top, clientHeightHalf, 0, 1.6, 0.25)
-                let backgroundAlpha = this.map(pBounding.top, clientHeightHalf, clientHeightHalf / 3, 1, 0)
+        for (const p of el.children) {
+          let pBounding = p.getBoundingClientRect()
+          if (pBounding.top >= 0) {
+            if (pBounding.top < clientHeightHalf) {
+              let lineHeight = this.map(pBounding.top, clientHeightHalf, 0, 1.6, 0.25)
+              let backgroundAlpha = this.map(pBounding.top, clientHeightHalf, clientHeightHalf / 3, 1, 0)
 
-                p.style.lineHeight = lineHeight
-                p.children[0].style.background = `rgba(255, 255, 255, ${backgroundAlpha})`
-              } else {
-                p.style.lineHeight = 1.6
-                p.children[0].style.background = `rgba(255, 255, 255, 1)`
-              }
+              p.style.lineHeight = lineHeight
+              p.children[0].style.background = `rgba(255, 255, 255, ${backgroundAlpha})`
+            } else {
+              p.style.lineHeight = 1.6
+              p.children[0].style.background = `rgba(255, 255, 255, 1)`
             }
           }
         }
       }
     },
 
-    setParagrafsTransform () {
+    setParagrafsXTransform () {
       const elsTranslate = this.$el.querySelectorAll('.translate')
       for (const el of elsTranslate) {
         el.style.transform = `translateX(${this.randomizer(-15, 15)}em)`
@@ -116,10 +99,8 @@ export default {
 
       const elsText = this.$el.querySelectorAll('.text')
       for (const el of elsText) {
-        for (const wrapper of el.children) {
-          for (const p of wrapper.children) {
-            p.style.transform = `translateX(${this.randomizer(-10, 10)}em)`
-          }
+        for (const p of el.children) {
+          p.style.transform = `translateX(${this.randomizer(-10, 10)}em)`
         }
       }
     },
@@ -159,71 +140,58 @@ export default {
 @import '../assets/css/_vars';
 @import '../assets/css/_mixins';
 
-.background {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: 0;
-}
+#tp-article {
+  .background {
+    position: fixed !important;
+    width: 100%;
+    height: 100vh;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+  }
 
-.container {
-    .content {
-      width: 100% - 100/2;
-      max-width: $tablet;
+  .container {
+      .content {
+        width: 100% - 100/2;
+        max-width: $tablet;
 
-        header {
-        }
+          header {
+            .font-title {
+              position: absolute;
+              width: 0;
+              font-size: 5em;
+              line-height: 2;
 
-        header {
-          .font-title {
-            position: absolute;
-            width: 0;
-            font-size: 5em;
-            line-height: 2;
-
-            @include widescreen {
-              font-size: 5rem;
+              @include widescreen {
+                font-size: 5rem;
+              }
             }
           }
-        }
 
-        .text {
-          mix-blend-mode: multiply;
-          min-height: 100vh;
-          // position: static;
-          margin: ((100/3) + vh) 0 75vh;
+          .text {
+            mix-blend-mode: multiply;
+            min-height: 100vh;
+            margin: ((100/3) + vh) 0 75vh;
+            position: relative;
 
-          p {
-            letter-spacing: .02em;
-            display: inline-block;
-            position: sticky;
-            top: 1px;
-            // position: relative;
+            p {
+              letter-spacing: .02em;
+              display: inline-block;
+              position: sticky;
+              top: 0;
 
-            @include widescreen {
-              font-size: 1rem;
-            }
+              @include widescreen {
+                font-size: 1rem;
+              }
 
-            // &:first-child:first-letter {
-            //   // color: #fff;
-            //   // font-family: 'Playfair Display', serif !important;
-            //   // font-family: 'Barlow Semi Condensed', serif !important;
-            //   font-size: 500%;
-            //   float: left;
-            //   position: absolute;
-            //   right: 0
-            // }
-
-            span {
-              background: #fff;
-              // position: relative;
+              span {
+                background: #fff;
+              }
             }
           }
-        }
 
-    }
+      }
+  }
 }
 </style>

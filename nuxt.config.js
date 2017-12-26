@@ -27,7 +27,7 @@ module.exports = {
   */
   plugins: [
     { src: '~/plugins/rellax', ssr: false },
-    { src: '~/plugins/parallax-js', ssr: false }
+    // { src: '~/plugins/parallax-js', ssr: false }
   ],
 
   /*
@@ -42,7 +42,7 @@ module.exports = {
     vendor: [
       'axios',
       'rellax',
-      'parallax-js'
+      // 'parallax-js'
     ],
 
     /*

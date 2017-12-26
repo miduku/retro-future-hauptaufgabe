@@ -1,36 +1,33 @@
 <template>
   <section class="container">
 
-    <div class="background">
-      <!-- <img src="http://semikolon-fhp.de/wp-content/uploads/2017/08/cafeteria.jpg" alt=""> -->
-    </div>
+    <div class="background"></div>
 
-    <article>
-      <div class="m-wrapper m-wrapper-01">
-        <div class="content">
-          <!-- HEADER -->
-          <header class="translate">
-            <div class="m-wrapper m-wrapper-02">
-              <h1 class="rellax font-title" data-rellax-speed="7">Bringt uns unsere Tassen zurück!</h1>
-            </div>
-          </header>
+    <div id="scene" data-selector=".m-wrapper">
+      <article>
+        <div class="m-wrapper m-wrapper-01" data-depth="0.1">
+          <div class="content">
+            <!-- HEADER -->
+            <header class="translate">
+              <div class="m-wrapper m-wrapper-02" data-depth="0.2">
+                <h1 class="rellax font-title" data-rellax-speed="7">Bringt uns unsere Tassen zurück!</h1>
+              </div>
+            </header>
 
-          <!-- TEXT -->
-            <div class="text">
-              <div class="m-wrapper m-wrapper-03">
-                <p v-for="(c, i) in content"
+            <!-- TEXT -->
+              <div class="text">
+                <p v-for="(cntnt, i) in content"
                   :key="i"
                 >
-                  <span v-html="c">
+                  <span v-html="cntnt">
                   </span>
                 </p>
               </div>
-            </div>
+          </div>
         </div>
-      </div>
+      </article>
+    </div>
 
-
-    </article>
   </section>
 </template>
 
@@ -59,13 +56,4 @@ export default {
 .background {
   background-image: url('/img/tassen-zurueck.jpg');
 }
-
-.text {
-  p {
-    span {
-      // background: #fff;
-    }
-  }
-}
-
 </style>

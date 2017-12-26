@@ -12,5 +12,5 @@ if (scene) {
   const prllx = new Parallax(scene)
   prllx.friction(0.1, 0.1)
   // prllx.selector = '.m-wrapper'
-  // console.log(prllx)
+  console.log(prllx)
 }
