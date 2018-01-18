@@ -81,6 +81,8 @@ a {
 
     header {
       position: relative;
+      // position: sticky;
+      // top: 0;
 
       .font-title {
         transition: $transition;

@@ -1,14 +1,36 @@
 <template>
   <section class="container">
 
-    <div class="background"></div>
+    <div class="background">
+      <div class="svg">
+        <div>
+
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"  preserveAspectRatio="none" style="height: 100%; width: 100%">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: #66ff06;
+                }
+              </style>
+            </defs>
+            <title>Element 1</title>
+            <g id="Ebene_2" data-name="Ebene 2">
+              <g id="Ebene_1-2" data-name="Ebene 1">
+                <polygon class="cls-1" points="0 0 100 0 100 100 0 100"/>
+              </g>
+            </g>
+          </svg>
+
+        </div>
+      </div>
+    </div>
 
     <div id="scene" data-selector=".m-wrapper">
       <article>
         <div class="m-wrapper m-wrapper-01" data-depth="0.1">
           <div class="content">
             <!-- HEADER -->
-            <header class="translate">
+            <header class="header translate">
               <div class="m-wrapper m-wrapper-02" data-depth="0.2">
                 <h1 class="rellax font-title" data-rellax-speed="7">Bringt uns unsere Tassen zurück!</h1>
               </div>
@@ -16,12 +38,14 @@
 
             <!-- TEXT -->
               <div class="text">
-                <p v-for="(cntnt, i) in content"
+                <div v-for="(cntnt, i) in content"
                   :key="i"
+                  class="text--container"
                 >
-                  <span v-html="cntnt">
-                  </span>
-                </p>
+                  <!-- <div class="text--background"></div> -->
+                  <p class="text--p" v-html="cntnt">
+                  </p>
+                </div>
               </div>
           </div>
         </div>

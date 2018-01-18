@@ -19,6 +19,7 @@ export default {
       // init
       this.setParallax()
       this.setParagrafsTopFixed()
+      this.setHeaderTopFixed()
       this.setParagrafsXTransform()
     })
   },
@@ -55,6 +56,7 @@ export default {
     handleScroll (e) {
       // console.log(top.getBoundingClientRect().top)
       this.setParagrafsTopFixed()
+      this.setHeaderTopFixed()
     },
 
     setParallax () {
@@ -64,27 +66,50 @@ export default {
       if (scene) {
         const prllx = new Parallax(scene)
         prllx.friction(0.1, 0.1)
-        console.log(prllx)
+        // console.log(prllx)
+      }
+    },
+
+    setHeaderTopFixed () {
+      const elHeader = this.$el.querySelector('.header')
+      const elHeaderTitle = this.$el.querySelector('.font-title')
+      const clientHeightQuarter = this.docHeight() / 4
+      const headerBounding = elHeader.getBoundingClientRect()
+
+      if (headerBounding.top >= 0) {
+        if (headerBounding.top < clientHeightQuarter) {
+          let lineHeight = this.map(headerBounding.top, clientHeightQuarter, 0, 2, 0.5)
+
+          elHeaderTitle.style.lineHeight = lineHeight
+        } else {
+          elHeaderTitle.style.lineHeight = 2
+        }
+        // console.log(elHeaderTitle)
       }
     },
 
     setParagrafsTopFixed () {
-      const elsText = this.$el.querySelectorAll('.text')
-      const clientHeightHalf = this.docHeight() / 4
+      const elText = this.$el.querySelector('.text')
+      const elsContainer = elText.querySelectorAll('.text--container')
+      const clientHeightQuarter = this.docHeight() / 2
 
-      for (const el of elsText) {
-        for (const p of el.children) {
-          let pBounding = p.getBoundingClientRect()
-          if (pBounding.top >= 0) {
-            if (pBounding.top < clientHeightHalf) {
-              let lineHeight = this.map(pBounding.top, clientHeightHalf, 0, 1.6, 0.25)
-              let backgroundAlpha = this.map(pBounding.top, clientHeightHalf, clientHeightHalf / 3, 1, 0)
+      for (const elContainer of elsContainer) {
+        const elsP = elContainer.querySelectorAll('.text--p')
+        let containerBounding = elContainer.getBoundingClientRect()
 
-              p.style.lineHeight = lineHeight
-              p.children[0].style.background = `rgba(255, 255, 255, ${backgroundAlpha})`
+        for (const elP of elsP) {
+          if (containerBounding.top >= 0) {
+            if (containerBounding.top < clientHeightQuarter) {
+              let lineHeight = this.map(containerBounding.top, clientHeightQuarter, 0, 1.6, 0.25)
+
+              elP.style.lineHeight = lineHeight
+              // if (lineHeight <= 1.5) {
+              //   elP.children[0].style.background = 'transparent'
+              // } else {
+              //   elP.children[0].style.background = '#fff'
+              // }
             } else {
-              p.style.lineHeight = 1.6
-              p.children[0].style.background = `rgba(255, 255, 255, 1)`
+              elP.style.lineHeight = 1.6
             }
           }
         }
@@ -149,6 +174,21 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
     top: 0;
+
+    .svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 20%;
+
+      div {
+        background: white;
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 
   .container {
@@ -158,7 +198,8 @@ export default {
 
           header {
             .font-title {
-              position: absolute;
+              position: sticky;
+              top: 0;
               width: 0;
               font-size: 5em;
               line-height: 2;
@@ -175,19 +216,24 @@ export default {
             margin: ((100/3) + vh) 0 75vh;
             position: relative;
 
+            .text--container {
+              position: sticky;
+              top: 0;
+            }
+
             p {
               letter-spacing: .02em;
               display: inline-block;
-              position: sticky;
-              top: 0;
+              // position: sticky;
+              // top: 0;
 
               @include widescreen {
                 font-size: 1rem;
               }
 
-              span {
-                background: #fff;
-              }
+              // span {
+              //   background: #fff;
+              // }
             }
           }
 
