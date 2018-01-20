@@ -1,13 +1,14 @@
 <template>
-  <div id="tp-article">
-    <nuxt/>
-  </div>
+  <nuxt id="tp-article"/>
 </template>
 
 <script>
-import Parallax from 'parallax-js'
+import mixins from '~/mixins/mixins'
+import mixinsParallax from '~/mixins/mixinsParallax'
 
 export default {
+  mixins: [mixins, mixinsParallax],
+
   data () {
     return {
     }
@@ -17,7 +18,7 @@ export default {
     // DOM ready
     this.$nextTick(() => {
       // init
-      this.setParallax()
+      this.setParallax(this.$route.name)
       this.setParagrafsTopFixed()
       this.setHeaderTopFixed()
       this.setParagrafsXTransform()
@@ -25,30 +26,14 @@ export default {
   },
 
   beforeMount () {
-    // window.addEventListener('mousemove', this.handleMouseMove)
-    // window.addEventListener('resize', this.handleResize)
     window.addEventListener('scroll', this.handleScroll)
   },
 
   beforeDestroy () {
-    // window.removeEventListener('mousemove', this.handleMouseMove)
-    // window.removeEventListener('resize', this.handleResize)
     window.removeEventListener('scroll', this.handleScroll)
   },
 
   methods: {
-    test () {
-      console.log('test')
-    },
-
-    randomizer (min, max) {
-      return Math.random() * (max - min) + min
-    },
-
-    map (value, domainMin, domainMax, rangeMin, rangeMax) {
-      return ((value - domainMin) / (domainMax - domainMin)) * (rangeMax - rangeMin) + rangeMin
-    },
-
     handleResize (e) {
       // this.getDocSize()
     },
@@ -57,17 +42,6 @@ export default {
       // console.log(top.getBoundingClientRect().top)
       this.setParagrafsTopFixed()
       this.setHeaderTopFixed()
-    },
-
-    setParallax () {
-      const scene = document.getElementById('scene')
-
-      // check if elements exist
-      if (scene) {
-        const prllx = new Parallax(scene)
-        prllx.friction(0.1, 0.1)
-        // console.log(prllx)
-      }
     },
 
     setHeaderTopFixed () {
@@ -94,7 +68,7 @@ export default {
       const clientHeightQuarter = this.docHeight() / 2
 
       for (const elContainer of elsContainer) {
-        const elsP = elContainer.querySelectorAll('.text--p')
+        const elsP = elContainer.querySelectorAll('p')
         let containerBounding = elContainer.getBoundingClientRect()
 
         for (const elP of elsP) {
@@ -103,11 +77,6 @@ export default {
               let lineHeight = this.map(containerBounding.top, clientHeightQuarter, 0, 1.6, 0.25)
 
               elP.style.lineHeight = lineHeight
-              // if (lineHeight <= 1.5) {
-              //   elP.children[0].style.background = 'transparent'
-              // } else {
-              //   elP.children[0].style.background = '#fff'
-              // }
             } else {
               elP.style.lineHeight = 1.6
             }
@@ -128,26 +97,21 @@ export default {
           p.style.transform = `translateX(${this.randomizer(-10, 10)}em)`
         }
       }
-    },
-
-    getDocSize () {
-      this.docWidth()
-      this.docHeight()
-    },
-
-    getScrollTop () {
-      return document.documentElement.scrollTop
-    },
-
-    docWidth () {
-      // console.log(document.documentElement.clientWidth)
-      return document.documentElement.clientWidth
-    },
-
-    docHeight () {
-      // console.log(document.documentElement.clientHeight)
-      return document.documentElement.clientHeight
     }
+
+    // getDocSize () {
+    //   this.docWidth()
+    //   this.docHeight()
+    // },
+
+    // getScrollTop () {
+    //   return document.documentElement.scrollTop
+    // },
+
+    // docWidth () {
+    //   // console.log(document.documentElement.clientWidth)
+    //   return document.documentElement.clientWidth
+    // },
 
     // Vuex Stuff (Store)
     // setStoreMouseCoords (coords) {
@@ -174,6 +138,14 @@ export default {
     background-repeat: no-repeat;
     background-size: cover;
     top: 0;
+    overflow: hidden;
+
+    .img {
+      object-fit: cover;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
 
     .svg {
       position: absolute;
@@ -181,25 +153,26 @@ export default {
       left: 0;
       width: 100%;
       height: 100%;
-      padding: 20%;
+      padding: 15%;
 
       div {
-        background: white;
+        // background: white;
         width: 100%;
         height: 100%;
       }
     }
   }
 
-  .container {
+  &.container {
       .content {
         width: 100% - 100/2;
         max-width: $tablet;
 
           header {
+            position: sticky;
+            top: 0;
+
             .font-title {
-              position: sticky;
-              top: 0;
               width: 0;
               font-size: 5em;
               line-height: 2;
@@ -215,6 +188,7 @@ export default {
             min-height: 100vh;
             margin: ((100/3) + vh) 0 75vh;
             position: relative;
+            pointer-events: all;
 
             .text--container {
               position: sticky;

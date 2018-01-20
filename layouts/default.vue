@@ -1,13 +1,14 @@
 <template>
-  <div id="tp-default">
-    <nuxt/>
-  </div>
+  <nuxt id="tp-default"/>
 </template>
 
 <script>
-import Parallax from 'parallax-js'
+import mixins from '~/mixins/mixins'
+import mixinsParallax from '~/mixins/mixinsParallax'
 
 export default {
+  mixins: [mixins, mixinsParallax],
+
   data () {
     return {
     }
@@ -17,7 +18,7 @@ export default {
     // DOM ready
     this.$nextTick(() => {
       // init
-      this.setParallax()
+      this.setParallax(this.$route.name)
       this.setParagrafsXTransform()
     })
   },
@@ -35,26 +36,15 @@ export default {
   },
 
   methods: {
-    randomizer (min, max) {
-      return Math.random() * (max - min) + min
-    },
+    // randomizer (min, max) {
+    //   return Math.random() * (max - min) + min
+    // },
 
     handleResize (e) {
       // console.log(e)
       // this.docHeight()
       // let top = this.$el.querySelector('.text')
       // console.log(top.getBoundingClientRect().top)
-    },
-
-    setParallax () {
-      const scene = document.getElementById('scene')
-
-      // check if elements exist
-      if (scene) {
-        const prllx = new Parallax(scene)
-        prllx.friction(0.1, 0.1)
-        // console.log(prllx)
-      }
     },
 
     setParagrafsXTransform () {
@@ -64,17 +54,17 @@ export default {
       for (const article of articles) {
         article.style.transform = `translate(${this.randomizer(-20, 20)}vw, ${this.randomizer(-5, 5)}vh)`
       }
-    },
-
-    docWidth () {
-      // console.log(document.documentElement.clientWidth)
-      return document.documentElement.clientWidth
-    },
-
-    docHeight () {
-      // console.log(document.documentElement.clientHeight)
-      return document.documentElement.clientHeight
     }
+
+    // docWidth () {
+    //   // console.log(document.documentElement.clientWidth)
+    //   return document.documentElement.clientWidth
+    // },
+
+    // docHeight () {
+    //   // console.log(document.documentElement.clientHeight)
+    //   return document.documentElement.clientHeight
+    // }
 
   }
 }
@@ -85,7 +75,31 @@ export default {
 @import '../assets/css/_mixins';
 
 #tp-default {
-  .container {
+  &.container {
+    .rootColumns {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+
+      .rootColumn {
+        display: block;
+        // width: 100%;
+
+        &.is-center {
+          // width: 80%;
+          flex-grow: 50;
+        }
+
+        &.is-left,
+        &.is-right {
+          // width: 10%;
+          flex-grow: 1;
+          background: hotpink;
+        }
+      }
+    }
+
     .content {
       position: relative;
       // width: 75%;

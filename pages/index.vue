@@ -1,55 +1,74 @@
 <template>
-  <section class="container" id="scene" data-selector=".m-wrapper">
+  <section class="container">
 
-      <div class="m-wrapper" data-depth="0.1">
-        <div class="content">
+    <div class="rootColumns">
+      <a href="#" class="rootColumn is-left">uqf</a>
 
-          <article
-            v-for="(article, i) in articles"
-            :key="i"
-          >
-            <nuxt-link :to="{ path: article.link }">
-              <!-- IMAGE -->
-              <div class="m-wrapper" data-depth="0.2">
-                <div class="background">
-                  <img
-                    :src="article.image"
-                  >
-                </div>
-              </div>
+      <div class="rootColumn is-center">
+        <div
+          :id="$route.name"
+          class="scene"
+          data-selector=".m-wrapper"
+        >
+          <div class="m-wrapper" data-depth="0.1">
+            <div class="content">
 
-              <!-- HEADER -->
-              <header>
-                <div class="meta">
-                  <span class="author">{{ article.meta.author }}</span>
-                </div>
-                <div class="m-wrapper" data-depth="0.3">
-                  <h1 class="font-title">
-                    <span>{{ article.title }}</span>
-                  </h1>
-                </div>
-              </header>
-
-              <!-- TEXT -->
-              <div class="m-wrapper" data-depth="0.4">
-                <div class="text">
-                  <div class="p-wrapper">
-                    <p v-html="article.intro">
-                    </p>
+              <article
+                v-for="(article, i) in articles"
+                :key="i"
+              >
+                <nuxt-link :to="article.link" exact>
+                  <!-- IMAGE -->
+                  <div class="m-wrapper" data-depth="0.2">
+                    <div class="background">
+                      <img
+                        :src="article.image"
+                      >
+                    </div>
                   </div>
-                </div>
-              </div>
-            </nuxt-link>
-          </article>
 
+                  <!-- HEADER -->
+                  <header>
+                    <div class="meta">
+                      <span class="author">{{ article.meta.author }}</span>
+                    </div>
+                    <div class="m-wrapper" data-depth="0.3">
+                      <h1 class="font-title">
+                        <span>{{ article.title }}</span>
+                      </h1>
+                    </div>
+                  </header>
+
+                  <!-- TEXT -->
+                  <div class="m-wrapper" data-depth="0.4">
+                    <div class="text">
+                      <div class="p-wrapper">
+                        <p v-html="article.intro">
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </nuxt-link>
+              </article>
+
+            </div>
+          </div>
         </div>
       </div>
+
+      <a href="#" class="rootColumn is-right">uqf</a>
+    </div>
 
   </section>
 </template>
 
 <script>
+import mixins from '~/mixins/mixins'
+import mixinsParallax from '~/mixins/mixinsParallax'
+
 export default {
+  mixins: [mixins, mixinsParallax],
+
   // async asyncData ({ app }) {
   //   return {
   //     hmm: app
@@ -57,7 +76,6 @@ export default {
   // },
 
   // layout: 'default',
-  // transition: 'out-in',
   data () {
     return {
       articles: [
@@ -123,15 +141,6 @@ export default {
         }
       ]
     }
-  },
-
-  mounted () {
-    this.$nextTick(() => {
-      // init
-      // const scene = document.getElementById('scene')
-      // let prllx = new Parallax(scene)
-      // prllx.friction(0.2, 0.2)
-    })
   }
 }
 </script>
