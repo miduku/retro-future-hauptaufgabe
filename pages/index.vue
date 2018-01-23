@@ -2,7 +2,9 @@
   <section class="container">
 
     <div class="rootColumns">
-      <a href="#" class="rootColumn is-left">uqf</a>
+      <a href="#" class="rootColumn is-left">
+        uqf
+      </a>
 
       <div class="rootColumn is-center">
         <div
@@ -56,7 +58,9 @@
         </div>
       </div>
 
-      <a href="#" class="rootColumn is-right">uqf</a>
+      <a href="#" class="rootColumn is-right">
+        uqf
+      </a>
     </div>
 
   </section>

@@ -40,19 +40,19 @@ img {
 }
 
 .font-title {
-  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-family: $fontSans;
   font-weight: 900;
 }
 
 .font-meta {
-  font-family: 'Playfair Display', serif;
+  font-family: $fontSerif2;
   // font-weight: 700;
 }
 
 p {
   margin-bottom: 1em;
 
-  &::last-child {
+  &:last-child {
     margin-bottom: 0;
   }
 }
@@ -71,6 +71,32 @@ a {
   width: 100%;
   height: auto;
   min-height: 100vh;
+
+  .rootColumns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    .rootColumn {
+      $cWidthCenter: 96%;
+      $cWidthRest: 100% - $cWidthCenter;
+      display: block;
+      // width: 100%;
+
+      &.is-center {
+        width: $cWidthCenter;
+        // flex-grow: 50;
+      }
+
+      &.is-left,
+      &.is-right {
+        width: $cWidthRest;
+        // flex-grow: 1;
+        background: hotpink;
+      }
+    }
+  }
 
   .content {
     margin: 0 auto;

@@ -76,30 +76,6 @@ export default {
 
 #tp-default {
   &.container {
-    .rootColumns {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: center;
-
-      .rootColumn {
-        display: block;
-        // width: 100%;
-
-        &.is-center {
-          // width: 80%;
-          flex-grow: 50;
-        }
-
-        &.is-left,
-        &.is-right {
-          // width: 10%;
-          flex-grow: 1;
-          background: hotpink;
-        }
-      }
-    }
-
     .content {
       position: relative;
       // width: 75%;

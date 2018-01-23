@@ -1,0 +1,16 @@
+[
+  {
+    "date": "2018-01-23",
+    "time": ["T11:00:00Z", "T14:30:00Z"],
+    "title": "Futures Literacy – Zukünfte entdecken und gestalten",
+    "desc": "<p>Jetzt endlich wieder da: Der regelmäßige Tischtennis-Dienstag im Casino!<br>Kommt rum und spielt zusammen Tischtennis… Aber bringt eure Stoppersocken mit!</p>",
+    "img": "/img/events/Casino-Logo_icon.png"
+  },
+  {
+    "date": "2018-01-23",
+    "time": ["T17:00:00Z", "T22:59:00Z"],
+    "title": "Tischtennis-Dienstag",
+    "desc": "<p>Jetzt endlich wieder da: Der regelmäßige Tischtennis-Dienstag im Casino!<br>Kommt rum und spielt zusammen Tischtennis… Aber bringt eure Stoppersocken mit!</p>",
+    "img": "/img/events/Casino-Logo_icon.png"
+  }
+]

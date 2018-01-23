@@ -3,7 +3,7 @@
 
     <div class="background">
       <div class="img canvas-container"></div>
-      <!-- <img class="img img-glitch" :src="backgroundImage" alt=""> -->
+      <img class="img img-glitch" :src="backgroundImage" alt="">
 
       <div class="svg">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"  preserveAspectRatio="none" style="height: 100%; width: 100%">
