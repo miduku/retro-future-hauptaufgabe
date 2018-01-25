@@ -1,28 +1,24 @@
 <template>
-  <section class="container">
+  <section
+    class="container"
+  >
 
     <div class="background">
-      <div class="img canvas-container"></div>
       <img class="img img-glitch" :src="backgroundImage" alt="">
 
       <div class="svg">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"  preserveAspectRatio="none" style="height: 100%; width: 100%">
-          <defs>
-            <style>
-              .cls-1 {
-                fill: #fff;
-              }
-            </style>
-          </defs>
           <title>Background SVG</title>
-          <g id="Ebene_2" data-name="Ebene 2">
-            <polygon class="cls-1" :points="setSvgPoints()"/>
-          </g>
+          <polygon fill="#fff" :points="setSvgPoints()"/>
         </svg>
       </div>
     </div>
 
-    <div class="scene" :id="$route.name" data-selector=".m-wrapper">
+    <div
+      :class="$route.name"
+      data-selector=".m-wrapper"
+      class="article-container"
+    >
       <article>
         <div class="m-wrapper m-wrapper-01" data-depth="0.1">
           <div class="content">
@@ -104,9 +100,3 @@ export default {
 }
 </script>
 
-
-<style lang="scss" scoped>
-.background {
-  // background-image: url('/img/tassen-zurueck.jpg');
-}
-</style>

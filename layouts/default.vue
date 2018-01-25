@@ -1,13 +1,27 @@
 <template>
-  <nuxt id="tp-default"/>
+  <transition name="layout" mode="out-in">
+    <div class="root">
+      <div id="tp-default">
+        <Logo/>
+
+        <nuxt/>
+      </div>
+    </div>
+  </transition>
 </template>
 
 <script>
 import mixins from '~/mixins/mixins'
 import mixinsParallax from '~/mixins/mixinsParallax'
 
+import Logo from '~/components/Logo'
+
 export default {
   mixins: [mixins, mixinsParallax],
+
+  components: {
+    Logo
+  },
 
   data () {
     return {
@@ -18,7 +32,8 @@ export default {
     // DOM ready
     this.$nextTick(() => {
       // init
-      this.setParallax(this.$route.name)
+      this.setParallax('.logo-' + this.$route.name)
+      this.setParallax('.' + this.$route.name)
       this.setParagrafsXTransform()
     })
   },
@@ -75,7 +90,9 @@ export default {
 @import '../assets/css/_mixins';
 
 #tp-default {
-  &.container {
+  position: relative;
+  z-index: 1;
+  .container {
     .content {
       position: relative;
       // width: 75%;

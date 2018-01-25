@@ -1,5 +1,9 @@
 <template>
-  <nuxt id="tpl-calendar"/>
+  <transition name="layout">
+    <div id="tpl-calendar">
+      <nuxt/>
+    </div>
+  </transition>
 </template>
 
 <script>
@@ -14,7 +18,7 @@ export default {
 
 
 #tpl-calendar {
-  &.container {
+  .container {
     $fontSizeWidescreen: 2.25vw;
 
     .cal {

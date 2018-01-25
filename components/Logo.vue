@@ -1,79 +1,147 @@
 <template>
-  <div class="VueToNuxtLogo">
-    <div class="Triangle Triangle--two"></div>
-    <div class="Triangle Triangle--one"></div>
-    <div class="Triangle Triangle--three"></div>
-    <div class="Triangle Triangle--four"></div>
+  <div class="logo-container" :class="'mode-' + layout">
+    <div :class="'logo-' + $route.name" data-selector=".m-wrapper">
+      <div class="logo m-wrapper m-wrapper-01" data-depth="0.3">
+        <div class="logo-translate">
+          <nuxt-link to="/" exact><img class="row main" src="/img/logo/svg-parts/Element 109.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row main" src="/img/logo/svg-parts/Element 110.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row main" src="/img/logo/svg-parts/Element 111.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row main" src="/img/logo/svg-parts/Element 112.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row main" src="/img/logo/svg-parts/Element 113.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row main" src="/img/logo/svg-parts/Element 114.svg"></nuxt-link>
+
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 115.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 116.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 117.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 118.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 119.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 120.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 121.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 122.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 123.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 124.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 125.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 126.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 127.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 128.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 129.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 130.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 131.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 132.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 133.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 134.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 135.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 136.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 137.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 138.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 139.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 140.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 141.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 142.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 143.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 144.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 145.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 146.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 147.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 148.svg"></nuxt-link>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
-<style>
-.VueToNuxtLogo {
-  display: inline-block;
-  animation: turn 2s linear forwards 1s;
-  transform: rotateX(180deg);
-  position: relative;
-  overflow: hidden;
-  height: 180px;
-  width: 245px;
-}
+<script>
+import mixins from '~/mixins/mixins'
 
-.Triangle {
-  position: absolute;
+export default {
+  mixins: [mixins],
+
+  props: ['layout'],
+
+  mounted () {
+    this.$nextTick(() => {
+      if (this.layout !== undefined) {
+        this.translateLogo()
+        this.scatterLogo()
+      }
+    })
+  },
+
+  methods: {
+    translateLogo () {
+      const logoTranslate = this.$el.querySelector('.logo-translate')
+
+      logoTranslate.style.transform = `translate(${this.randomizer(-15, 15) + 'em'})`
+    },
+
+    scatterLogo () {
+      const rows = this.$el.querySelectorAll('.logo .row')
+
+      for (const row of rows) {
+        const x = this.randomizer(-15, 10) + 'em'
+        const y = this.randomizer(-15, 10) + 'em'
+
+        row.style.transform = `translate(${x} ,${y})`
+      }
+    }
+  }
+}
+</script>
+
+
+<style lang="scss" scoped>
+@import '../assets/css/_vars';
+@import '../assets/css/_mixins';
+
+.logo-container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
-  width: 0;
-  height: 0;
-}
+  overflow: visible;
+  transition: $transition;
 
-.Triangle--one {
-  border-left: 105px solid transparent;
-  border-right: 105px solid transparent;
-  border-bottom: 180px solid #41B883;
-}
-
-.Triangle--two {
-  top: 30px;
-  left: 35px;
-  animation: goright 0.5s linear forwards 3.5s;
-  border-left: 87.5px solid transparent;
-  border-right: 87.5px solid transparent;
-  border-bottom: 150px solid #3B8070;
-}
-
-.Triangle--three {
-  top: 60px;
-  left: 35px;
-  animation: goright 0.5s linear forwards 3.5s;
-  border-left: 70px solid transparent;
-  border-right: 70px solid transparent;
-  border-bottom: 120px solid #35495E;
-}
-
-.Triangle--four {
-  top: 120px;
-  left: 70px;
-  animation: godown 0.5s linear forwards 3s;
-  border-left: 35px solid transparent;
-  border-right: 35px solid transparent;
-  border-bottom: 60px solid #fff;
-}
-
-@keyframes turn {
-  100% {
-    transform: rotateX(0deg);
+  &.mode-article {
+    position: absolute;
+    z-index: 1;
+    height: ((100/3) + vh);
   }
-}
 
-@keyframes godown {
-  100% {
-    top: 180px;
-  }
-}
+  .logo {
+    position: relative;
+    line-height: 0;
 
-@keyframes goright {
-  100% {
-    left: 70px;
+    .logo-translate {
+      width: 14.750em;
+      height: 7em;
+
+      &:focus,
+      &:hover {
+        .row {
+          transform: translate(0, 0) !important;
+        }
+      }
+    }
+
+    a {
+      pointer-events: all;
+    }
+
+    .row {
+      width: auto;
+      margin: 0;
+      height: 19.65%;
+      transition: $transition;
+
+      &.main {
+        height: 40%;
+      }
+    }
   }
 }
 </style>
+

@@ -1,5 +1,7 @@
 <template>
-  <section class="container">
+  <section
+    class="container"
+  >
 
     <div class="rootColumns">
       <a href="#" class="rootColumn is-left">
@@ -8,11 +10,10 @@
 
       <div class="rootColumn is-center">
         <div
-          :id="$route.name"
-          class="scene"
+          :class="$route.name"
           data-selector=".m-wrapper"
         >
-          <div class="m-wrapper" data-depth="0.1">
+          <div class="m-wrapper" data-depth="0.2">
             <div class="content">
 
               <article
@@ -21,7 +22,7 @@
               >
                 <nuxt-link :to="article.link" exact>
                   <!-- IMAGE -->
-                  <div class="m-wrapper" data-depth="0.2">
+                  <div class="m-wrapper" data-depth="0.3">
                     <div class="background">
                       <img
                         :src="article.image"
@@ -34,7 +35,7 @@
                     <div class="meta">
                       <span class="author">{{ article.meta.author }}</span>
                     </div>
-                    <div class="m-wrapper" data-depth="0.3">
+                    <div class="m-wrapper" data-depth="0.4">
                       <h1 class="font-title">
                         <span>{{ article.title }}</span>
                       </h1>
@@ -42,7 +43,7 @@
                   </header>
 
                   <!-- TEXT -->
-                  <div class="m-wrapper" data-depth="0.4">
+                  <div class="m-wrapper" data-depth="0.5">
                     <div class="text">
                       <div class="p-wrapper">
                         <p v-html="article.intro">

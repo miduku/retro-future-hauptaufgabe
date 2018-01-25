@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="7.42mm" height="9.88mm" viewBox="0 0 21.02 28">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <title>Element 136</title>
+  <g id="Ebene_2" data-name="Ebene 2">
+    <g id="Ebene_1-2" data-name="Ebene 1">
+      <g>
+        <path d="M21,18.35h0v1.4H17.39l-.13-1.18A5.31,5.31,0,0,1,13.72,20c-3,0-4.73-2.1-4.73-6,0-4.28,2-6.61,5.62-6.61a6.24,6.24,0,0,1,2.45.54v-5H15V1.53H19V18.35Zm-4-8.8h0a5.15,5.15,0,0,0-2.36-.61c-2.37,0-3.75,1.72-3.75,5,0,3,1.1,4.57,3.15,4.57a4.44,4.44,0,0,0,3-1.37Z"/>
+        <rect class="cls-1" width="21.02" height="28"/>
+      </g>
+    </g>
+  </g>
+</svg>

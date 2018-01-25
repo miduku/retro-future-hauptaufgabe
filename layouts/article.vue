@@ -1,13 +1,27 @@
 <template>
-  <nuxt id="tp-article"/>
+  <transition name="layout" mode="out-in">
+    <div class="root">
+      <div id="tp-article">
+        <Logo layout="article"/>
+
+        <nuxt/>
+      </div>
+    </div>
+  </transition>
 </template>
 
 <script>
 import mixins from '~/mixins/mixins'
 import mixinsParallax from '~/mixins/mixinsParallax'
 
+import Logo from '~/components/Logo'
+
 export default {
   mixins: [mixins, mixinsParallax],
+
+  components: {
+    Logo
+  },
 
   data () {
     return {
@@ -18,10 +32,12 @@ export default {
     // DOM ready
     this.$nextTick(() => {
       // init
-      this.setParallax(this.$route.name)
+      this.setParallax('.logo-' + this.$route.name)
+      this.setParallax('.' + this.$route.name)
       this.setParagrafsTopFixed()
       this.setHeaderTopFixed()
       this.setParagrafsXTransform()
+      this.homeIfScrolledBottom()
     })
   },
 
@@ -42,6 +58,38 @@ export default {
       // console.log(top.getBoundingClientRect().top)
       this.setParagrafsTopFixed()
       this.setHeaderTopFixed()
+    },
+
+    homeIfScrolledBottom () {
+      const el = this.$el.querySelector('.text')
+      const $this = this
+
+      const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: [0, 1]
+      }
+
+      const observer = new IntersectionObserver(handleIntersect, options)
+      observer.observe(el)
+
+      function handleIntersect (entries, observer) {
+        entries.forEach(entry => {
+          // console.log(entry)
+          if (entry.isIntersecting === false) {
+            $this.$nuxt.$router.replace({ path: '/' })
+          }
+        })
+      }
+
+      // const docHeight = this.docHeight()
+
+      // console.log(el.scrollHeight - el.scrollTop, docHeight)
+      // // console.log(el)
+      // if (el.scrollHeight - el.scrollTop === docHeight) {
+      //   // console.log('bloop')
+      //   this.$nuxt.$router.replace({ path: '/' })
+      // }
     },
 
     setHeaderTopFixed () {
@@ -98,25 +146,6 @@ export default {
         }
       }
     }
-
-    // getDocSize () {
-    //   this.docWidth()
-    //   this.docHeight()
-    // },
-
-    // getScrollTop () {
-    //   return document.documentElement.scrollTop
-    // },
-
-    // docWidth () {
-    //   // console.log(document.documentElement.clientWidth)
-    //   return document.documentElement.clientWidth
-    // },
-
-    // Vuex Stuff (Store)
-    // setStoreMouseCoords (coords) {
-    //   this.$store.commit('newMouseCoords', coords)
-    // }
   }
 }
 </script>
@@ -163,10 +192,14 @@ export default {
     }
   }
 
-  &.container {
+  .container {
+    .article-container {
+      z-index: 1;
+    }
       .content {
         width: 100% - 100/2;
         max-width: $tablet;
+        padding-top: ((100/3) + vh);
 
           header {
             position: sticky;
@@ -186,7 +219,9 @@ export default {
           .text {
             mix-blend-mode: multiply;
             min-height: 100vh;
-            margin: ((100/3) + vh) 0 75vh;
+            // margin: 0 0 ((100/3) + vh);
+            // padding: 0 0 (((100/3)*2) + vh);
+            margin: 0 0 101vh;
             position: relative;
             pointer-events: all;
 

@@ -71,6 +71,7 @@ a {
   width: 100%;
   height: auto;
   min-height: 100vh;
+  transition: $transition;
 
   .rootColumns {
     display: flex;
@@ -135,17 +136,59 @@ a {
 .container {
   transition: all .2s;
 
-  &.page-leave,
-  // &.page-enter-active,
-  // &.page-leave-active,
-  // &.page-enter-to
-  {
-    opacity: 1;
-  }
-
-  &.page-enter,
-  // &.page-leave-active,
-  &.page-leave-to {
-    opacity: 0;
-  }
 }
+
+
+.page-enter-active,
+.layout-enter-active  {
+  transition: $transition;
+  transform-origin: 50% 50vh;
+}
+
+
+// .page-enter-active,
+// .page-leave-to {
+//   transform: scale(1);
+//   opacity: 1;
+// }
+// .page-enter,
+// .page-leave-to {
+//   opacity: 0;
+//   transform: scale(0.75)
+// }
+
+
+
+.layout-enter-active,
+.layout-leave-to{
+  opacity: 1;
+  transform: scale(1);
+}
+.layout-enter,
+.layout-leave-to {
+  opacity: 0;
+  transform: scale(0.75)
+}
+
+// .layout-enter,
+// .page-enter {
+//   transform: translate3d(100%, 0, 0);
+// }
+
+// .layout-leave-to,
+// .page-leave-to {
+//   transform: translate3d(-100%, 0, 0);
+// }
+
+// .layout-enter {
+//   transform: scale(0.75)
+// }
+
+// .layout-enter-to,
+// .layout-leave {
+//   transform: scale(1);
+// }
+
+// .layout-leave-to {
+//   transform: scale(1.25)
+// }

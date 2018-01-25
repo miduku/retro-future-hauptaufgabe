@@ -126,7 +126,7 @@
 </template>
 
 <script>
-import events from '~/static/events.json'
+import events from '~/static/json/events.json'
 
 export default {
   layout: 'calendar',

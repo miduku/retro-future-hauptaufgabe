@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="45.39mm" height="20.07mm" viewBox="0 0 128.66 56.88">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <title>Element 114</title>
+  <g id="Ebene_2" data-name="Ebene 2">
+    <g id="Ebene_1-2" data-name="Ebene 1">
+      <g>
+        <path d="M44.25,39.22h-.07V45.6h-18V39.22h3.37V26.57c0-2.63-1.18-4-3.7-4-1.47,0-3.54.94-6.32,2.75V39.22h3.37V45.6H5V39.22h5v-18H5V14.93H18.2l.75,2.9a19.52,19.52,0,0,1,10.43-3.55c6.52,0,9.81,3.77,9.81,11.24v13.7Z"/>
+        <rect class="cls-1" width="128.66" height="56.88"/>
+      </g>
+    </g>
+  </g>
+</svg>

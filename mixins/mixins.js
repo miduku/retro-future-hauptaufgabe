@@ -4,12 +4,17 @@ export default {
       return ((value - domainMin) / (domainMax - domainMin)) * (rangeMax - rangeMin) + rangeMin
     },
 
-    randomizer (min, max) {
-      return Math.random() * (max - min) + min
+    randomizer (min, max, isRounded = false) {
+      const res = Math.random() * (max - min) + min
+
+      if (isRounded) {
+        return Math.round(res)
+      }
+
+      return res
     },
 
     docHeight () {
-      // console.log(document.documentElement.clientHeight)
       return document.documentElement.clientHeight
     }
   }
