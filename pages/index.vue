@@ -95,12 +95,12 @@ export default {
           }
         },
         {
-          title: `Bringt uns unsere Tassen zurück!`,
-          intro: `Jede*r kennt es, wir holen uns morgens um 8 Uhr einen Kaffee, Tee oder Kakao in der Cafeteria. In der nächsten Pause gehen wir ins Casino und holen uns die nächste Ration unseres favorisierten Heißgetränks. Am Nachmittag kommen wir zurück und holen uns unsere nächste Ladung…`,
+          title: `Arbeitsraum: 404 Not Found`,
+          intro: `Gerade befinde ich mich in einem Auslandssemester in Amsterdam und eigentlich ist die FH;P gedanklich so weit entfernt, dass es mich gerade selbst verwundert, dass ich mich mit ihr beschäftige.`,
           image: `/img/tassen-zurueck.jpg`,
-          link: `/articles/beitrag-tassen`,
+          link: `/articles/arbeitsraum-404`,
           meta: {
-            author: `Nikolas Ripka`,
+            author: `blablabla`,
             pubDate: `20171127`
           }
         },
