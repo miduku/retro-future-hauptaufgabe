@@ -3,7 +3,7 @@
     <article>
       <div class="content">
         <header>
-          <h1>Header</h1>
+          <h1>Arbeitsraum: 404 Not Found</h1>
         </header>
 
         <div class="text">
