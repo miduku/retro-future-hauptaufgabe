@@ -98,7 +98,7 @@ export default {
       const clientHeightQuarter = this.docHeight() / 4
       const headerBounding = elHeader.getBoundingClientRect()
 
-      if (headerBounding.top >= 0) {
+      if (headerBounding.top >= 0 && headerBounding !== 'undefined' && elHeader !== 'undefined') {
         if (headerBounding.top < clientHeightQuarter) {
           let lineHeight = this.map(headerBounding.top, clientHeightQuarter, 0, 2, 0.5)
 
