@@ -22,6 +22,8 @@ import mixins from '~/mixins/mixins'
 export default {
   mixins: [mixins],
 
+  layout: 'article',
+
   mounted () {
     this.$nextTick(() => {
       // this.randomizer(0, 10)
