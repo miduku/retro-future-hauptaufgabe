@@ -28,8 +28,7 @@ export default {
 @import '../assets/css/_vars';
 @import '../assets/css/_mixins';
 
-.logo-arbeitsraum-404 {
-    position: absolute;
+.logo-articles-arbeitsraum-404 {
 }
 </style>
 

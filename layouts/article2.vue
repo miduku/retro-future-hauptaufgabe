@@ -36,7 +36,7 @@ export default {
       this.setParallax('.' + this.$route.name)
       // this.setParagrafsTopFixed()
       this.setHeaderTopFixed()
-      this.setParagrafsXTransform()
+      // this.setParagrafsXTransform()
       this.homeIfScrolledBottom()
     })
   },
@@ -218,17 +218,17 @@ export default {
           }
 
           .text {
-            mix-blend-mode: multiply;
+            // mix-blend-mode: multiply;
             min-height: 100vh;
             // margin: 0 0 ((100/3) + vh);
             // padding: 0 0 (((100/3)*2) + vh);
-            margin: 0 0 101vh;
+            // margin: 0 0 101vh;
             position: relative;
             pointer-events: all;
 
             .text--container {
-              position: sticky;
-              top: 0;
+              // position: sticky;
+              // top: 0;
             }
 
             p {
