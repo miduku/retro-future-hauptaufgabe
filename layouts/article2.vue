@@ -132,21 +132,21 @@ export default {
           }
         }
       }
-    },
-
-    setParagrafsXTransform () {
-      const elsTranslate = this.$el.querySelectorAll('.translate')
-      for (const el of elsTranslate) {
-        el.style.transform = `translateX(${this.randomizer(-15, 15)}em)`
-      }
-
-      const elsText = this.$el.querySelectorAll('.text')
-      for (const el of elsText) {
-        for (const p of el.children) {
-          p.style.transform = `translateX(${this.randomizer(-10, 10)}em)`
-        }
-      }
     }
+
+    // setParagrafsXTransform () {
+    //   const elsTranslate = this.$el.querySelectorAll('.translate')
+    //   for (const el of elsTranslate) {
+    //     el.style.transform = `translateX(${this.randomizer(-15, 15)}em)`
+    //   }
+
+    //   const elsText = this.$el.querySelectorAll('.text')
+    //   for (const el of elsText) {
+    //     for (const p of el.children) {
+    //       p.style.transform = `translateX(${this.randomizer(-10, 10)}em)`
+    //     }
+    //   }
+    // }
   }
 }
 </script>
