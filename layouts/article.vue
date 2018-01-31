@@ -98,6 +98,8 @@ export default {
       const clientHeightQuarter = this.docHeight() / 4
       const headerBounding = elHeader.getBoundingClientRect()
 
+      console.log(headerBounding)
+
       if (headerBounding !== null && elHeader.length > 0) {
         if (headerBounding.top >= 0) {
           if (headerBounding.top < clientHeightQuarter) {
