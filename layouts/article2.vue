@@ -2,7 +2,7 @@
   <transition name="layout" mode="out-in">
     <div class="root">
       <div id="tp-article">
-        <Logo layout="article"/>
+        <Logo2/>
 
         <nuxt/>
       </div>
@@ -14,13 +14,13 @@
 import mixins from '~/mixins/mixins'
 import mixinsParallax from '~/mixins/mixinsParallax'
 
-import Logo from '~/components/Logo'
+import Logo2 from '~/components/Logo2'
 
 export default {
   mixins: [mixins, mixinsParallax],
 
   components: {
-    Logo
+    Logo2
   },
 
   data () {
@@ -34,7 +34,7 @@ export default {
       // init
       this.setParallax('.logo-' + this.$route.name)
       this.setParallax('.' + this.$route.name)
-      this.setParagrafsTopFixed()
+      // this.setParagrafsTopFixed()
       this.setHeaderTopFixed()
       this.setParagrafsXTransform()
       this.homeIfScrolledBottom()
@@ -56,7 +56,7 @@ export default {
 
     handleScroll (e) {
       // console.log(top.getBoundingClientRect().top)
-      this.setParagrafsTopFixed()
+      // this.setParagrafsTopFixed()
       this.setHeaderTopFixed()
     },
 
