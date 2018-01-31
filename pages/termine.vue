@@ -117,7 +117,7 @@
             href="#"
             class="row year"
           >
-            <h2 class="year-name">{{ calendar.name + 1 }}</h2>
+            <h2 class="year-name" style="transform: rotate(180deg)">{{ calendar.name + 1 }}</h2>
           </a>
 
         </div>

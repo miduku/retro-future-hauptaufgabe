@@ -101,7 +101,6 @@ export default {
       // console.log(headerBounding)
 
       if (headerBounding !== null) {
-        console.log(elHeader)
         if (headerBounding.top >= 0) {
           if (headerBounding.top < clientHeightQuarter) {
             let lineHeight = this.map(headerBounding.top, clientHeightQuarter, 0, 2, 0.5)
