@@ -1,11 +1,11 @@
 <template>
-  <section
-    class="container"
-  >
+  <section class="container">
 
     <div class="rootColumns">
       <a href="#" class="rootColumn is-left">
-        uqf
+        <div>
+
+        </div>
       </a>
 
       <div class="rootColumn is-center">
@@ -59,9 +59,24 @@
         </div>
       </div>
 
-      <a href="#" class="rootColumn is-right">
-        uqf
-      </a>
+      <nuxt-link to="/termine" exact class="rootColumn is-right">
+        <div>
+          <ul>
+            <li>Januar</li>
+            <li>Februar</li>
+            <li>März</li>
+            <li>April</li>
+            <li>Mai</li>
+            <li>Juni</li>
+            <li>Juli</li>
+            <li>August</li>
+            <li>September</li>
+            <li>Oktober</li>
+            <li>November</li>
+            <li>Dezember</li>
+          </ul>
+        </div>
+      </nuxt-link>
     </div>
 
   </section>

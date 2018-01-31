@@ -67,7 +67,7 @@ export default {
       // console.log(elsText)
 
       for (const article of articles) {
-        article.style.transform = `translate(${this.randomizer(-20, 20)}vw, ${this.randomizer(-5, 5)}vh)`
+        article.style.transform = `translate(${this.randomizer(-12, 12)}vw, ${this.randomizer(-5, 5)}vh)`
       }
     }
 
@@ -96,7 +96,7 @@ export default {
     .content {
       position: relative;
       // width: 75%;
-      max-width: $tablet;
+      // max-width: $tablet;
       display: flex;
       flex-wrap: wrap;
       // flex-direction: column;
@@ -104,7 +104,8 @@ export default {
 
       article {
         display: block;
-        width: 100%;
+        width: 50%;
+        margin-bottom: 4em;
 
         > a {
           position: relative;

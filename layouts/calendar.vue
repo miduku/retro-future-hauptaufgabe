@@ -55,8 +55,20 @@ export default {
 
       .month {
         &.is-active {
+          margin-bottom: 5em;
+
           .month-name {
             opacity: 1;
+            // transform: scale(3);
+            transform-origin: 50% 70%;
+            font-weight: 600;
+            opacity: .25;
+            line-height: 1;
+            font-size: 5em;
+
+            @include widescreen {
+              // font-size: 4vw;
+            }
           }
 
           ul.days {
@@ -138,6 +150,8 @@ export default {
             }
 
             &.is-active {
+              z-index: 2;
+
               .day-container {
                 position: absolute;
                 z-index: 1;
@@ -154,8 +168,21 @@ export default {
 
                 .events {
                   .event {
+                    position: relative;
+                    transition: $transition;
+
                     .img {
                       width: 25%;
+                      transition: $transition;
+                    }
+
+                    .time {
+                      line-height: 1;
+                      transition: $transition;
+                    }
+
+                    h3 {
+                      line-height: 1;
                       transition: $transition;
                     }
 
@@ -198,7 +225,7 @@ export default {
                 // background: purple;
                 width: 35vw;
                 left: calc(-35vw/2 + .5em);
-                font-size: 0;
+                // font-size: 0;
                 display: none;
 
                 @include widescreen {
@@ -206,15 +233,16 @@ export default {
                   left: (-400px/2);
                 }
 
-                &.is-active {
-                }
-
                 li.event {
-                  position: relative;
+                  position: absolute;
                   // background: greenyellow;
 
                   + li.event {
                     margin-top: 2em;
+                  }
+
+                  h3 {
+                    // line-height: .5;
                   }
 
                   &.is-active {
@@ -222,11 +250,13 @@ export default {
                       transition: $transition;
                       transform: translateY(1.25em);
                       margin-bottom: 1.5em;
+                      line-height: 1;
                     }
 
                     .time {
                       transition: $transition;
-                      transform: translateY(0)
+                      transform: translateY(0);
+                      line-height: 1;
                     }
 
                     .img {
@@ -243,7 +273,7 @@ export default {
                   h3 {
                     font-size: 1.75em;
                     margin-bottom: 1em;
-                    line-height: 1;
+                    line-height: .25;
                     position: relative;
                     z-index: 1;
                     // transition: $transition;
@@ -255,6 +285,7 @@ export default {
                     font-size: 2.5em;
                     position: absolute;
                     top: 0;
+                    line-height: .25;
                   }
 
                   .desc {

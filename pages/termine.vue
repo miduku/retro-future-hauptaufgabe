@@ -2,9 +2,11 @@
   <section class="container">
 
     <div class="rootColumns">
-      <a href="#" class="rootColumn is-left">
-        uqf
-      </a>
+      <nuxt-link to="/" exact class="rootColumn is-left">
+        <div>
+
+        </div>
+      </nuxt-link>
 
       <div class="rootColumn is-center">
         <div class="cal">
@@ -16,6 +18,7 @@
             <h2 class="year-name">{{ calendar.name - 1 }}</h2>
           </a>
 
+          <!-- months -->
           <div
             v-for="month in calendar.months"
             :key="month"
@@ -29,6 +32,7 @@
               {{ month.name }}
             </h2>
 
+            <!-- days -->
             <ul
               class="days"
             >
@@ -43,8 +47,10 @@
                   @click="closeOverlay(day)"
                   v-show="day.isOverlay"
                   class="day-overlay"
-                ></div>
+                >
+                </div>
 
+                <!-- v-if (day.events.length) -->
                 <div
                   v-if="day.events.length > 0"
                   class="day-container has-events"
@@ -72,7 +78,7 @@
                         class="event-click-container"
                       >
                         <h3>{{ event.title }}</h3>
-                        <span class="time">{{ event.time[0] }} – {{ event.time[1] }}</span>
+                        <span class="time bla" :style="'color: ' + event.color">{{ event.time[0] }} – {{ event.time[1] }}</span>
                       </div>
 
                       <div
@@ -92,6 +98,7 @@
                   </ul>
                 </div>
 
+                <!-- v-else -->
                 <div
                   v-else
                   class="day-container"
@@ -117,7 +124,9 @@
       </div>
 
       <a href="#" class="rootColumn is-right">
-        ukf
+        <div>
+
+        </div>
       </a>
     </div>
 
@@ -254,7 +263,8 @@ export default {
                   desc: event.desc,
                   img: event.img,
                   venue: event.venue,
-                  isActive: false
+                  isActive: false,
+                  color: event.color
                 })
               }
             }
