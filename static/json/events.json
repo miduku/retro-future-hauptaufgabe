@@ -5,7 +5,8 @@
     "venue": "Casino / Haus 17",
     "title": "Tischtennis-Dienstag",
     "desc": "<p>Jetzt endlich wieder da: Der regelmäßige Tischtennis-Dienstag im Casino!<br>Kommt rum und spielt zusammen Tischtennis… Aber bringt eure Stoppersocken mit!</p>",
-    "img": "/img/events/Casino-Logo_icon.png"
+    "img": "/img/events/Casino-Logo_icon.png",
+    "color": "red" 
   },
   {
     "date": "2018-01-10",
@@ -13,7 +14,8 @@
     "venue": "Casino / Haus 17",
     "title": "Frankenstein | Casino Kino",
     "desc": "<p>Dorfpolizist Brendan Gleeson und FBI-Spezialist Don Cheadle müssen es in The Guard miteinander aushalten, um einem brutalen Mord auf den Grund zu gehen.</p><p>Gerry Boyle (Brendan Gleeson) ist The Guard, ein in die Jahre gekommener, einsamer Kleinstadtbulle, der seinen Job nicht ganz so ernst nimmt. Als man in einem Wohngebiet jedoch eine Männerleiche findet, die regelrecht hingerichtet wurde, stellt man ihm den FBI-Agenten Wendell Everett (Don Cheadle) zur Seite. Nach anfänglichen Verständigungsschwierigkeiten raufen sich die beiden zusammen, um gemeinsam gegen brutale Drogenschmuggler vorzugehen.</p>",
-    "img": "/img/events/Casino-Kino-semikolon-11.png"
+    "img": "/img/events/Casino-Kino-semikolon-11.png",
+    "color": "red"
   },
   {
     "date": "2018-01-12",
@@ -21,7 +23,8 @@
     "venue": "Hauptgebäude: Großer Hörsaal",
     "title": "Eine Bank aus der Berliner Gerichtslaube?",
     "desc": "<p>Gastvortrag im Zuge der Vortragsreihe des Studienganges Konservierung und Restaurierung im Wintersemester 2017/18</p><p>Elisabeth Bartel (Stiftung Stadtmuseum Berlin, Fachbereich Kunstgewerbe): Eine Bank aus der Berliner Gerichtslaube? Der Versuch, die Objektgeschichte eines mittelalterlichen Möbels zu rekonstruieren</p>",
-    "img": "/img/events/fhp-standard-b-4.png"
+    "img": "/img/events/fhp-standard-b-4.png",
+    "color": "#919191"
   },
   {
     "date": "2018-01-16",
@@ -29,7 +32,8 @@
     "venue": "Casino / Haus 17",
     "title": "Tischtennis-Dienstag",
     "desc": "<p>Jetzt endlich wieder da: Der regelmäßige Tischtennis-Dienstag im Casino!<br>Kommt rum und spielt zusammen Tischtennis… Aber bringt eure Stoppersocken mit!</p>",
-    "img": "/img/events/Casino-Logo_icon.png"
+    "img": "/img/events/Casino-Logo_icon.png",
+    "color": "red"
   },
   {
     "date": "2018-01-17",
@@ -37,7 +41,8 @@
     "venue": "Casino / Haus 17",
     "title": "Der kleine Mexikaner | Casino Kino",
     "desc": "<p>Dorfpolizist Brendan Gleeson und FBI-Spezialist Don Cheadle müssen es in The Guard miteinander aushalten, um einem brutalen Mord auf den Grund zu gehen.</p><p>Gerry Boyle (Brendan Gleeson) ist The Guard, ein in die Jahre gekommener, einsamer Kleinstadtbulle, der seinen Job nicht ganz so ernst nimmt. Als man in einem Wohngebiet jedoch eine Männerleiche findet, die regelrecht hingerichtet wurde, stellt man ihm den FBI-Agenten Wendell Everett (Don Cheadle) zur Seite. Nach anfänglichen Verständigungsschwierigkeiten raufen sich die beiden zusammen, um gemeinsam gegen brutale Drogenschmuggler vorzugehen.</p>",
-    "img": "/img/events/Casino-Kino-semikolon-11.png"
+    "img": "/img/events/Casino-Kino-semikolon-11.png",
+    "color": "red"
   },
   {
     "date": "2018-01-19",
@@ -45,7 +50,8 @@
     "venue": "Hauptgebäude",
     "title": "Hochschulball",
     "desc": "<p>Gastvortrag im Zuge der Vortragsreihe des Studienganges Konservierung und Restaurierung im Wintersemester 2017/18</p><p>Elisabeth Bartel (Stiftung Stadtmuseum Berlin, Fachbereich Kunstgewerbe): Eine Bank aus der Berliner Gerichtslaube? Der Versuch, die Objektgeschichte eines mittelalterlichen Möbels zu rekonstruieren</p>",
-    "img": "/img/events/hsb.png"
+    "img": "/img/events/hsb.png",
+    "color": "#B18E34"
   },
   {
     "date": "2018-01-23",
@@ -53,7 +59,8 @@
     "venue": "Casino / Haus 17",
     "title": "Tischtennis-Dienstag",
     "desc": "<p>Jetzt endlich wieder da: Der regelmäßige Tischtennis-Dienstag im Casino!<br>Kommt rum und spielt zusammen Tischtennis… Aber bringt eure Stoppersocken mit!</p>",
-    "img": "/img/events/Casino-Logo_icon.png"
+    "img": "/img/events/Casino-Logo_icon.png",
+    "color": "red"
   },
   {
     "date": "2018-01-24",
@@ -61,7 +68,8 @@
     "venue": "Casino / Haus 17",
     "title": "Wieso nicht Micha? | Casino Kino",
     "desc": "<p>Dorfpolizist Brendan Gleeson und FBI-Spezialist Don Cheadle müssen es in The Guard miteinander aushalten, um einem brutalen Mord auf den Grund zu gehen.</p><p>Gerry Boyle (Brendan Gleeson) ist The Guard, ein in die Jahre gekommener, einsamer Kleinstadtbulle, der seinen Job nicht ganz so ernst nimmt. Als man in einem Wohngebiet jedoch eine Männerleiche findet, die regelrecht hingerichtet wurde, stellt man ihm den FBI-Agenten Wendell Everett (Don Cheadle) zur Seite. Nach anfänglichen Verständigungsschwierigkeiten raufen sich die beiden zusammen, um gemeinsam gegen brutale Drogenschmuggler vorzugehen.</p>",
-    "img": "/img/events/Casino-Kino-semikolon-11.png"
+    "img": "/img/events/Casino-Kino-semikolon-11.png",
+    "color": "red"
   },
   {
     "date": "2018-01-30",
@@ -69,7 +77,8 @@
     "venue": "Casino / Haus 17",
     "title": "Tischtennis-Dienstag",
     "desc": "<p>Jetzt endlich wieder da: Der regelmäßige Tischtennis-Dienstag im Casino!<br>Kommt rum und spielt zusammen Tischtennis… Aber bringt eure Stoppersocken mit!</p>",
-    "img": "/img/events/Casino-Logo_icon.png"
+    "img": "/img/events/Casino-Logo_icon.png",
+    "color": "red"
   },
   {
     "date": "2018-01-31",
@@ -77,7 +86,8 @@
     "venue": "Casino / Haus 17",
     "title": "Wieso nicht Kate? | Casino Kino",
     "desc": "<p>Dorfpolizist Brendan Gleeson und FBI-Spezialist Don Cheadle müssen es in The Guard miteinander aushalten, um einem brutalen Mord auf den Grund zu gehen.<br>Gerry Boyle (Brendan Gleeson) ist The Guard, ein in die Jahre gekommener, einsamer Kleinstadtbulle, der seinen Job nicht ganz so ernst nimmt. Als man in einem Wohngebiet jedoch eine Männerleiche findet, die regelrecht hingerichtet wurde, stellt man ihm den FBI-Agenten Wendell Everett (Don Cheadle) zur Seite. Nach anfänglichen Verständigungsschwierigkeiten raufen sich die beiden zusammen, um gemeinsam gegen brutale Drogenschmuggler vorzugehen.</p>",
-    "img": "/img/events/Casino-Kino-semikolon-11.png"
+    "img": "/img/events/Casino-Kino-semikolon-11.png",
+    "color": "red"
   },
   {
     "date": "2018-02-06",
@@ -85,7 +95,8 @@
     "venue": "Kunstraum Potsdam",
     "title": "Futures Literacy – Zukünfte entdecken und gestalten",
     "desc": "<p>Einführung und Workshop mit Stefanie Ollenburg; Zukunftsforscherin und Gestalterin.</p><p>Zukunft nutzen, Zukunft gestalten: Was steckt hinter dem Projekt beFORE? Ob Designer*innen, Politiker*innen oder Entrepreneure – sie alle gestalten Zukunft. Doch oftmals ist der eigene Standpunkt ein Hindernis und Veränderung die Hürde.</p><p>Mit Kreativität und Spiel sollen die Perspektiven von anderen erlebt und die Ungewissheiten von Zukünften entdeckt werden. Denn im Workshop nimmt jedes Team eine Rolle ein und entwickelt daraus unterschiedliche Zukunftsbilder. Am Ende steht die Analyse des plausiblen Zukunftsbildes des anderen Teams. Die anschließende Präsentation der Zukünfte kann jegliche Ausdrucksform annehmen, ob Poster, Rollenspiel, oder Kurzgeschichte. Denn die Zukunft wirkt nur abstrakt, wenn wir nicht ihre vielen Möglichkeiten kennenlernen.<br>Zur Person: Derzeit arbeitet Stefanie Ollenburg als wissenschaftliche Mitarbeiterin am Institut Futur der Freien Universität Berlin im Projekt beFORE (Becoming Future-Oriented Entrepreneurs in Universities and Companies). Sie lehrt zum einen am Career Center der Humboldt Universität zu Berlin Konzeption und Mediengestaltung, zum anderen gibt sie Einführungsseminare in Zukunftsforschung an der FH Münster, FB Architektur. Weiterhin freiberuflich unterstützt sie Organisationen im Bereich der Unternehmenskommunikation.</p><p>Der Workshop dauert bis ca. 15.30 Uhr mit anschließender öffentlicher Präsentation der Ergebnisse.</p><p>Anreise und weitere Informationen zur Ausstellung und Programm im Kunstraum.</p>",
-    "img": "/img/events/fhp-standard-b-4.png"
+    "img": "/img/events/fhp-standard-b-4.png",
+    "color": "#919191"
   },
   {
     "date": "2018-02-06",
@@ -93,7 +104,8 @@
     "venue": "Casino / Haus 17",
     "title": "Tischtennis-Dienstag",
     "desc": "<p>Jetzt endlich wieder da: Der regelmäßige Tischtennis-Dienstag im Casino!<br>Kommt rum und spielt zusammen Tischtennis… Aber bringt eure Stoppersocken mit!</p>",
-    "img": "/img/events/Casino-Logo_icon.png"
+    "img": "/img/events/Casino-Logo_icon.png",
+    "color": "red"
   },
   {
     "date": "2018-02-06",
@@ -101,7 +113,8 @@
     "venue": "Kunstraum Potsdam",
     "title": "The German Mut",
     "desc": "<p>Vortrag und Diskussion mit Prof. Eckehard Binas</p><p>The German Mut ist die Politisierung des Designs mit einem gesteigerten Gefühl; ist die Fortsetzung der Politik mit anderen Mitteln, die Fortsetzung der Ökonomie mit einer anderen Attitüde. Seine Grundierung ist Vertrauen – in uns.<br>The German Mut ist die Gestimmtheit von Denken und Handeln auf dem Resonanzlevel von Problemlösungen.</p><p>Zur Person: Eckehard Binas studierte Kulturwissenschaften an der Humboldt-Universität zu Berlin und promovierte 1985 zum Zusammenhang von Ästhetik und Entwicklungstheorie. Von 1993 bis 1999 war er als wissenschaftlicher Mitarbeiter an der Fachhochschule Potsdam tätig und hat den Studiengang Kulturarbeit mit aufgebaut. Seit 1999 ist er Professor für Kulturphilosophie, Ästhetik und Kulturgeschichte an der Hochschule Zittau/Görlitz und war bis zum September 2012 Dekan der dortigen Fakultät für Wirtschafts- und Sprachwissenschaften. Er leitete an der Hochschule Zittau/Görlitz das Hochschulinstitut für Transformation, Wohnen und soziale Raumentwicklung in Görlitz.</p><p>Eckehard Binas ist seit 1. Januar 2013 Präsident der Fachhochschule Potsdam.</p>",
-    "img": "/img/events/fhp-standard-b-4.png"
+    "img": "/img/events/fhp-standard-b-4.png",
+    "color": "#919191"
   },
   {
     "date": "2018-02-07",
@@ -109,7 +122,8 @@
     "venue": "Haus 2, Raum 014",
     "title": "Dr. Ulrich Kampffmeyer, Update Information Management 2018",
     "desc": "<p>Am 07.02.2018 ist Dr. Ulrich Kampffmeyer zu Gast im Informationswissenschaftlichen Kolloquium des Fachbereichs Informationswissenschaften der FH Potsdam.</p><p>Dr. Kampffmeyer ist Geschäftsführer der renommierten PROJECT CONSULT Unternehmensberatung Dr. Ulrich Kampffmeyer GmbH, ein seit 25 Jahren tätiges hersteller- und produktunabhängiges Beratungsunternehmen für Information-, Projekt- und Change Management.</p><p>Dr. Kampffmeyer gehört deutschlandweit zu den ausgewiesenen Experten auf den Gebieten Dokumenten-, Content- und Records Management. Im Rahmen seiner jährlichen stattfindenden Reihe „Update Information Management 2018“ kommt er in diesem Jahr auch nach Potsdam. Unter dem diesjährigen Motto der Reihe „Digitale Transformation: Fast Forward“ stellt Dr. Kampffmeyer neue Trends im Information Management vor.</p>",
-    "img": "/img/events/fhp-standard-b-4.png"
+    "img": "/img/events/fhp-standard-b-4.png",
+    "color": "#919191"
   },
   {
     "date": "2018-02-07",
@@ -117,7 +131,8 @@
     "venue": "Casino / Haus 17",
     "title": "The Guard | Casino Kino",
     "desc": "<p>Dorfpolizist Brendan Gleeson und FBI-Spezialist Don Cheadle müssen es in The Guard miteinander aushalten, um einem brutalen Mord auf den Grund zu gehen.<br>Gerry Boyle (Brendan Gleeson) ist The Guard, ein in die Jahre gekommener, einsamer Kleinstadtbulle, der seinen Job nicht ganz so ernst nimmt. Als man in einem Wohngebiet jedoch eine Männerleiche findet, die regelrecht hingerichtet wurde, stellt man ihm den FBI-Agenten Wendell Everett (Don Cheadle) zur Seite. Nach anfänglichen Verständigungsschwierigkeiten raufen sich die beiden zusammen, um gemeinsam gegen brutale Drogenschmuggler vorzugehen.</p>",
-    "img": "/img/events/Casino-Kino-semikolon-11.png"
+    "img": "/img/events/Casino-Kino-semikolon-11.png",
+    "color": "red"
   },
   {
     "date": "2018-02-10",
@@ -125,7 +140,8 @@
     "venue": "Casino / Haus 17",
     "title": "Kotulla Forever: 30 Jahre Illustration",
     "desc": "<p>Unser Illustrations-Professor Kotulla ist das letzte Semester an der FHP. Seit 23 Jahren unterrichtet und inspiriert er uns. Wir möchten ihm daher einen schönen Abschied gestalten und die Gelegenheit gleichzeitig nutzen auch die studentischen Arbeiten, die in dieser Zeit entstanden sind, zu zeigen. Deshalb organisieren wir eine Ausstellung, die am letzten Januarwochenende im Casino in Potsdam stattfinden soll.</p>",
-    "img": "/img/events/kotulla-forever.png"
+    "img": "/img/events/kotulla-forever.png",
+    "color": "red"
   },
   {
     "date": "2018-02-11",
@@ -133,7 +149,8 @@
     "venue": "Casino / Haus 17",
     "title": "Kotulla Forever: 30 Jahre Illustration",
     "desc": "<p>Unser Illustrations-Professor Kotulla ist das letzte Semester an der FHP. Seit 23 Jahren unterrichtet und inspiriert er uns. Wir möchten ihm daher einen schönen Abschied gestalten und die Gelegenheit gleichzeitig nutzen auch die studentischen Arbeiten, die in dieser Zeit entstanden sind, zu zeigen. Deshalb organisieren wir eine Ausstellung, die am letzten Januarwochenende im Casino in Potsdam stattfinden soll.</p>",
-    "img": "/img/events/kotulla-forever.png"
+    "img": "/img/events/kotulla-forever.png",
+    "color": "red"
   },
   {
     "date": "2018-02-12",
@@ -141,7 +158,8 @@
     "venue": "Hauptgebäude: Theaterwerkstatt",
     "title": "Antrittsvorlesung: Dr. Jeannine Meinhardt",
     "desc": "<p>In diesem Semester wird mit den Antrittsvorlesungen für neuberufene Professor*innen eine akademische Tradition an der FH wiederbelebt. Sieben neue Kolleginnen werden sich in den kommenden Wochen jeweils montags, ab 18 Uhr der Hochschulöffentlichkeit vorstellen.</p>",
-    "img": "/img/events/antrittsvorlesung.png"
+    "img": "/img/events/antrittsvorlesung.png",
+    "color": "#FFE70D"
   },
   {
     "date": "2018-02-13",
@@ -149,7 +167,8 @@
     "venue": "Casino / Haus 17",
     "title": "Tischtennis-Dienstag",
     "desc": "<p>Jetzt endlich wieder da: Der regelmäßige Tischtennis-Dienstag im Casino!<br>Kommt rum und spielt zusammen Tischtennis… Aber bringt eure Stoppersocken mit!</p>",
-    "img": "/img/events/Casino-Logo_icon.png"
+    "img": "/img/events/Casino-Logo_icon.png",
+    "color": "red"
   },
   {
     "date": "2018-02-14",
@@ -157,7 +176,8 @@
     "venue": "Casino / Haus 17",
     "title": "Der Tag wird kommen | Casino Kino",
     "desc": "<p>Die in tiefschwarzen Humor eingefärbte Komödie Der Tag wird kommen konfrontiert zwei Anarchisten mit der kargen Konsumgesellschaft der Gegenwart.</p><p>Nachdem der Familienvater Jean-Pierre Bonzini (Albert Dupontel) seinen Job verliert, gerät sein spießbürgerliches Leben ins Wanken. Lebens- und Sinnkrise treiben ihn in die Arme seines Bruders ‘Not’ (Benoît Poelvoorde), der sich für einen alternativen Lebensweg entschieden hat, und ein Dasein als gealterter Punk fristet. Das ehemals ungleiche Paar mutiert zum Punkduo “Not & Dead”, und wird zum Schrecken der Nachbarschaft.</p>",
-    "img": "/img/events/Casino-Kino-semikolon-11.png"
+    "img": "/img/events/Casino-Kino-semikolon-11.png",
+    "color": "red"
   },
   {
     "date": "2018-02-16",
@@ -165,7 +185,8 @@
     "venue": "Haus D: Hörsaal",
     "title": "Eignungsprüfung Konservierung und Restaurierung",
     "desc": "<p>Die Eignungsprüfung der Bewerber*innen für das Studium im Fach der Konservierung und Restaurierung. Die Einführung beginnt im Hörsaal im Haus D. Die gestalterische Prüfung nach der Mittagspause findet im LWG Raum 165-166 statt.</p>",
-    "img": "/img/events/fhp-standard-b-4.png"
+    "img": "/img/events/fhp-standard-b-4.png",
+    "color": "#919191"
   },
   {
     "date": "2018-02-19",
@@ -173,7 +194,8 @@
     "venue": "Haus D: Foyer",
     "title": "Infotag Design",
     "desc": "<p>Bringt Eure Mappen mit! Professor*innen beraten und Design-Studierende informieren über das Studium und die Eignungsprüfung<br>Noch vor der eigentlichen Bewerbung an der Hochschule stellen sich Studieninteressierten häufig eine ganze Reihe Fragen: Hat die Hochschule den richtigen Schwerpunkt für meine Bedürfnisse? Ist meine Mappe ausreichend für die Bewerbungsrunde bestückt? Wann muss ich mich überhaupt bewerben? Was studiere ich eigentlich im Fach Design und bringe ich die erforderlichen Voraussetzungen dafür mit?</p><p>Seit mehreren Jahren bietet der Fachbereich Design der FH Potsdam Studieninteressierten an, mit Professorinnen und Professoren der Fächer Kommunikationsdesign, Interfacedesign und Produktdesign ins Gespräch zu kommen. Nach einer Begrüßung durch den Dekan des Fachbereichs bietet sich für Studieninteressierten die Möglichkeit, bei »Zeigt her Eure Mappen« eine individuelle Beratung zu eigenen Arbeiten zu erhalten. Zudem werden erfolgreiche Mappen aus den letzten Bewerbungsrunden vorgestellt und zu einem Rundgang durch die Seminarräume und Werkstätten eingeladen.</p>",
-    "img": "/img/events/sticker_infotag_design-2.png"
+    "img": "/img/events/sticker_infotag_design-2.png",
+    "color": "#919191"
   },
   {
     "date": "2018-02-20",
@@ -181,7 +203,8 @@
     "venue": "Casino / Haus 17",
     "title": "Tischtennis-Dienstag",
     "desc": "<p>Jetzt endlich wieder da: Der regelmäßige Tischtennis-Dienstag im Casino!<br>Kommt rum und spielt zusammen Tischtennis… Aber bringt eure Stoppersocken mit!</p>",
-    "img": "/img/events/Casino-Logo_icon.png"
+    "img": "/img/events/Casino-Logo_icon.png",
+    "color": "red"
   },
   {
     "date": "2018-02-21",
@@ -189,7 +212,8 @@
     "venue": "Casino / Haus 17",
     "title": "Rubber | Casino Kino",
     "desc": "<p>Mr. Oizos Meta-Horrorfilm Rubber lässt einen telekinetisch begabten Autoreifen zum Serienmörder werden, während das Publikum vergiftet wird.</p><p>Der Autoreifen Robert erwacht in der Wüste zum Leben und entdeckt seine telekinetischen Fähigkeiten. Zuerst bringt er kleine Tierchen um, bevor er beginnt, sich an Menschen zu “vergreifen”. Er mutiert zu einem wahren Filmbösewicht. Währenddessen bekommen die Zuschauer in sicherer Entfernung vergiftetes Essen serviert. Da einer diesen Angriff überlebt, muss das “Stück” jedoch weiter aufgeführt werden, doch die verschiedenen Ebenen beginnen ineinander zu greifen.</p>",
-    "img": "/img/events/Casino-Kino-semikolon-11.png"
+    "img": "/img/events/Casino-Kino-semikolon-11.png",
+    "color": "red"
   },
   {
     "date": "2018-02-26",
@@ -197,7 +221,8 @@
     "venue": "Campus",
     "title": "Winter School: GründerInnen-Kompaktwoche",
     "desc": "<p>Crashkurs für angehende FreiberuflerInnen und GründerInnen</p><p>Du bist mutig, hast gute Ideen und spielst mit dem Gedanken, dich selbstständig zu machen? Leider fehlen dir aber kaufmännische und rechtliche Kenntnisse für deine geplante Freiberuflichkeit?</p><p>In der GründerInnenkompaktwoche hast du die Möglichkeit, mit anderen Studierenden grundlegende Anforderungen an die Gründung des eigenen Unternehmens bzw. den erfolgreichen Start in eine FreiberuflerInnen-Tätigkeit zu reflektieren. Dabei werden folgende Themenschwerpunkte vermittelt und trainiert: persönliche Eignung, Umsetzung der Ideen am Markt, sachliche Voraussetzungen und die Nutzung öffentlicher Finanzierungshilfen. Am Mittwoch kommt ein Marketingexperte hinzu und am Donnerstag könnt Ihr Eure Fragen bei einem Rechtsanwalt los werden.</p>",
-    "img": "/img/events/ZETUP-Gruendungsservice-q.png"
+    "img": "/img/events/ZETUP-Gruendungsservice-q.png",
+    "color": "#919191"
   },
   {
     "date": "2018-02-26",
@@ -205,7 +230,8 @@
     "venue": "Haus 3, Raum 004",
     "title": "Schlüsselkompetenzen kompakt",
     "desc": "<p>Blockveranstaltung in der vorlesungsfreien Zeit</p><p>Das Seminar bietet die Chance, sich mit bedeutenden fachübergreifenden Kompetenzen auseinander zu setzen, sich selbst zu reflektieren und Methoden und Werkzeuge kennenzulernen, die sowohl im Studium als auch im Arbeitsalltag nützlich sein werden.</p>",
-    "img": "/img/events/FHP-Kolleg-Logo-2.png"
+    "img": "/img/events/FHP-Kolleg-Logo-2.png",
+    "color": "#80BBE3"
   },
   {
     "date": "2018-02-27",
@@ -213,7 +239,8 @@
     "venue": "Haus 3, Raum 004",
     "title": "Schlüsselkompetenzen kompakt",
     "desc": "<p>Blockveranstaltung in der vorlesungsfreien Zeit</p><p>Das Seminar bietet die Chance, sich mit bedeutenden fachübergreifenden Kompetenzen auseinander zu setzen, sich selbst zu reflektieren und Methoden und Werkzeuge kennenzulernen, die sowohl im Studium als auch im Arbeitsalltag nützlich sein werden.</p>",
-    "img": "/img/events/FHP-Kolleg-Logo-2.png"
+    "img": "/img/events/FHP-Kolleg-Logo-2.png",
+    "color": "#80BBE3"
   },
   {
     "date": "2018-02-28",
@@ -221,7 +248,8 @@
     "venue": "Haus 3, Raum 004",
     "title": "Schlüsselkompetenzen kompat",
     "desc": "<p>Blockveranstaltung in der vorlesungsfreien Zeit</p><p>Das Seminar bietet die Chance, sich mit bedeutenden fachübergreifenden Kompetenzen auseinander zu setzen, sich selbst zu reflektieren und Methoden und Werkzeuge kennenzulernen, die sowohl im Studium als auch im Arbeitsalltag nützlich sein werden.</p>",
-    "img": "/img/events/FHP-Kolleg-Logo-2.png"
+    "img": "/img/events/FHP-Kolleg-Logo-2.png",
+    "color": "#80BBE3"
   },
   {
     "date": "2018-03-06",
@@ -229,7 +257,8 @@
     "venue": "Casino / Haus 17",
     "title": "Tischtennis-Dienstag",
     "desc": "<p>Jetzt endlich wieder da: Der regelmäßige Tischtennis-Dienstag im Casino!<br>Kommt rum und spielt zusammen Tischtennis… Aber bringt eure Stoppersocken mit!</p>",
-    "img": "/img/events/Casino-Logo_icon.png"
+    "img": "/img/events/Casino-Logo_icon.png",
+    "color": "red"
   },
   {
     "date": "2018-03-07",
@@ -237,7 +266,8 @@
     "venue": "Casino / Haus 17",
     "title": "Rip Kanik Oh! | Casino Kino",
     "desc": "<p>Dorfpolizist Brendan Gleeson und FBI-Spezialist Don Cheadle müssen es in The Guard miteinander aushalten, um einem brutalen Mord auf den Grund zu gehen.<br>Gerry Boyle (Brendan Gleeson) ist The Guard, ein in die Jahre gekommener, einsamer Kleinstadtbulle, der seinen Job nicht ganz so ernst nimmt. Als man in einem Wohngebiet jedoch eine Männerleiche findet, die regelrecht hingerichtet wurde, stellt man ihm den FBI-Agenten Wendell Everett (Don Cheadle) zur Seite. Nach anfänglichen Verständigungsschwierigkeiten raufen sich die beiden zusammen, um gemeinsam gegen brutale Drogenschmuggler vorzugehen.</p>",
-    "img": "/img/events/Casino-Kino-semikolon-11.png"
+    "img": "/img/events/Casino-Kino-semikolon-11.png",
+    "color": "red"
   },
   {
     "date": "2018-03-13",
@@ -245,7 +275,8 @@
     "venue": "Casino / Haus 17",
     "title": "Tischtennis-Dienstag",
     "desc": "<p>Jetzt endlich wieder da: Der regelmäßige Tischtennis-Dienstag im Casino!<br>Kommt rum und spielt zusammen Tischtennis… Aber bringt eure Stoppersocken mit!</p>",
-    "img": "/img/events/Casino-Logo_icon.png"
+    "img": "/img/events/Casino-Logo_icon.png",
+    "color": "red"
   },
   {
     "date": "2018-03-14",
@@ -253,7 +284,8 @@
     "venue": "Casino / Haus 17",
     "title": "Galindo Lindo | Casino Kino",
     "desc": "<p>Dorfpolizist Brendan Gleeson und FBI-Spezialist Don Cheadle müssen es in The Guard miteinander aushalten, um einem brutalen Mord auf den Grund zu gehen.<br>Gerry Boyle (Brendan Gleeson) ist The Guard, ein in die Jahre gekommener, einsamer Kleinstadtbulle, der seinen Job nicht ganz so ernst nimmt. Als man in einem Wohngebiet jedoch eine Männerleiche findet, die regelrecht hingerichtet wurde, stellt man ihm den FBI-Agenten Wendell Everett (Don Cheadle) zur Seite. Nach anfänglichen Verständigungsschwierigkeiten raufen sich die beiden zusammen, um gemeinsam gegen brutale Drogenschmuggler vorzugehen.</p>",
-    "img": "/img/events/Casino-Kino-semikolon-11.png"
+    "img": "/img/events/Casino-Kino-semikolon-11.png",
+    "color": "red"
   },
   {
     "date": "2018-03-16",
@@ -261,7 +293,8 @@
     "venue": "Haus 3, Raum 002",
     "title": "Wie moderiere ich Gruppen?",
     "desc": "<p>Blockveranstaltung in der vorlesungsfreien Zeit</p><p>Das Seminar bietet die Chance, sich mit bedeutenden fachübergreifenden Kompetenzen auseinander zu setzen, sich selbst zu reflektieren und Methoden und Werkzeuge kennenzulernen, die sowohl im Studium als auch im Arbeitsalltag nützlich sein werden.</p>",
-    "img": "/img/events/FHP-Kolleg-Logo-2.png"
+    "img": "/img/events/FHP-Kolleg-Logo-2.png",
+    "color": "#80BBE3"
   },
   {
     "date": "2018-02-19",
@@ -269,7 +302,8 @@
     "venue": "Haus 2, Raum 014",
     "title": "Dr. Patrizia Windhoff: Information is Now!",
     "desc": "<p>Am 19.02.2018 ist Dr. Patrizia Windhoff zu Gast im Informationswissenschaftlichen Kolloquium des Fachbereichs Informationswissenschaften der FH Potsdam. Dr. Windhoff ist Geschäftsführer der renommierten PROJECT CONSULT Unternehmensberatung Dr. Patrizia Windhoff GmbH, ein seit 25 Jahren tätiges hersteller- und produktunabhängiges Beratungsunternehmen für Information-, Projekt- und Change Management.</p><p>Dr. Windhoff gehört deutschlandweit zu den ausgewiesenen Experten auf den Gebieten Dokumenten-, Content- und Records Management. Im Rahmen seiner jährlichen stattfindenden Reihe „Update Information Management 2018“ kommt er in diesem Jahr auch nach Potsdam. Unter dem diesjährigen Motto der Reihe „Digitale Transformation: Fast Forward“ stellt Dr. Windhoff neue Trends im Information Management vor.</p>",
-    "img": "/img/events/fhp-standard-b-4.png"
+    "img": "/img/events/fhp-standard-b-4.png",
+    "color": "#919191"
   },
   {
     "date": "2018-03-21",
@@ -277,7 +311,8 @@
     "venue": "Haus 3, Raum 002",
     "title": "Mit Worten überzeugen",
     "desc": "<p>Blockveranstaltung in der vorlesungsfreien Zeit</p><p>Das Seminar bietet die Chance, sich mit bedeutenden fachübergreifenden Kompetenzen auseinander zu setzen, sich selbst zu reflektieren und Methoden und Werkzeuge kennenzulernen, die sowohl im Studium als auch im Arbeitsalltag nützlich sein werden.</p>",
-    "img": "/img/events/FHP-Kolleg-Logo-2.png"
+    "img": "/img/events/FHP-Kolleg-Logo-2.png",
+    "color": "#80BBE3"
   },
   {
     "date": "2018-03-23",
@@ -285,7 +320,8 @@
     "venue": "Casino / Haus 17",
     "title": "Loreleyfest",
     "desc": "<p>Jetzt geht´s los!</p>",
-    "img": "/img/events/Casino-Logo_icon.png"
+    "img": "/img/events/Casino-Logo_icon.png",
+    "color": "red"
   },
   {
     "date": "2018-03-26",
@@ -293,7 +329,8 @@
     "venue": "Hauptgebäude: Theaterwerkstatt",
     "title": "Antrittsvorlesung: Dr. Ellen Euler",
     "desc": "<p>In diesem Semester wird mit den Antrittsvorlesungen für neuberufene Professor*innen eine akademische Tradition an der FH wiederbelebt. Sieben neue Kolleginnen werden sich in den kommenden Wochen jeweils montags, ab 18 Uhr der Hochschulöffentlichkeit vorstellen.</p>",
-    "img": "/img/events/antrittsvorlesung.png"
+    "img": "/img/events/antrittsvorlesung.png",
+    "color": "#FFE70D"
   },
   {
     "date": "2018-03-28",
@@ -301,7 +338,8 @@
     "venue": "Haus 3, Raum 004",
     "title": "Methoden des Zeitmanagements",
     "desc": "<p>Blockveranstaltung in der vorlesungsfreien Zeit</p><p>Das Seminar bietet die Chance, sich mit bedeutenden fachübergreifenden Kompetenzen auseinander zu setzen, sich selbst zu reflektieren und Methoden und Werkzeuge kennenzulernen, die sowohl im Studium als auch im Arbeitsalltag nützlich sein werden.</p>",
-    "img": "/img/events/FHP-Kolleg-Logo-2.png"
+    "img": "/img/events/FHP-Kolleg-Logo-2.png",
+    "color": "#80BBE3"
   },
   {
     "date": "2018-04-09",
@@ -309,7 +347,8 @@
     "venue": "Hauptgebäude: Theaterwerkstatt",
     "title": "Antrittsvorlesung: Dr. Michael D. Kummer",
     "desc": "<p>In diesem Semester wird mit den Antrittsvorlesungen für neuberufene Professor*innen eine akademische Tradition an der FH wiederbelebt. Sieben neue Kolleginnen werden sich in den kommenden Wochen jeweils montags, ab 18 Uhr der Hochschulöffentlichkeit vorstellen.</p>",
-    "img": "/img/events/antrittsvorlesung.png"
+    "img": "/img/events/antrittsvorlesung.png",
+    "color": "#FFE70D"
   },
   {
     "date": "2018-04-17",
@@ -317,6 +356,7 @@
     "venue": "Haus 2, Raum 014",
     "title": "MACR Praxistag 2018",
     "desc": "<p>Auch in diesem Jahr wird der M.A. Childhood Studies and Children’s Rights einen Praxistag veranstalten, wozu wir Sie gerne einladen möchten.</p>",
-    "img": "/img/events/fhp-standard-b-4.png"
+    "img": "/img/events/fhp-standard-b-4.png",
+    "color": "#919191"
   }
 ]
