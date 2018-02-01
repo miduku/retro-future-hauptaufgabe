@@ -154,6 +154,14 @@ export default {
     height: ((100/3) + vh);
   }
 
+  &.mode-article2 {
+    position: absolute;
+    z-index: 1;
+    height: ((100/3) + vh);
+    filter: invert(100%);
+    mix-blend-mode: difference;
+  }
+
   .logo {
     position: relative;
     line-height: 0;

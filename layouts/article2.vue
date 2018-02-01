@@ -2,7 +2,7 @@
   <transition name="layout" mode="out-in">
     <div class="root">
       <div id="tp-article">
-        <Logo2/>
+        <Logo layout="article2"/>
 
         <nuxt/>
       </div>
@@ -14,13 +14,13 @@
 import mixins from '~/mixins/mixins'
 import mixinsParallax from '~/mixins/mixinsParallax'
 
-import Logo2 from '~/components/Logo2'
+import Logo from '~/components/Logo'
 
 export default {
   mixins: [mixins, mixinsParallax],
 
   components: {
-    Logo2
+    Logo
   },
 
   data () {
