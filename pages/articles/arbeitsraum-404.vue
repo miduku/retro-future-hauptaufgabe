@@ -159,15 +159,18 @@ export default {
     #b5 {
         transform: translate(-170%,80%);
         width: 15%;
+        mix-blend-mode: difference;
     }
     #b6 {
         transform: translate(-35%,-240%);
         width: 25%;
         line-height: 1.6;
+        mix-blend-mode: difference;
     }
     #b7 {
         transform: translate(-30%,-385%);
         width: 25%;
         line-height: 1.6;
+        mix-blend-mode: difference;
     }
 </style>
