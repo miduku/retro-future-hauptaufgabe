@@ -3,47 +3,47 @@
     <div :class="'logo-' + $route.name" data-selector=".m-wrapper">
       <div class="logo" :class="(layout !== undefined) ? '' : 'm-wrapper m-wrapper-01'" data-depth="0.3">
         <div class="logo-translate">
-          <nuxt-link to="/" exact><img class="row main" src="/img/logo/svg-parts/Element 109.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row main" src="/img/logo/svg-parts/Element 110.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row main" src="/img/logo/svg-parts/Element 111.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row main" src="/img/logo/svg-parts/Element 112.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row main" src="/img/logo/svg-parts/Element 113.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row main" src="/img/logo/svg-parts/Element 114.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row main" src="img/logo/svg-parts/Element 109.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row main" src="img/logo/svg-parts/Element 110.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row main" src="img/logo/svg-parts/Element 111.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row main" src="img/logo/svg-parts/Element 112.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row main" src="img/logo/svg-parts/Element 113.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row main" src="img/logo/svg-parts/Element 114.svg"></nuxt-link>
 
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 115.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 116.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 117.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 118.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 119.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 120.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 121.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 122.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 123.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 124.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 125.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 126.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 127.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 128.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 129.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 130.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 131.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 132.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 133.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 134.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 135.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 136.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 137.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 138.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 139.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 140.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 141.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 142.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 143.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 144.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 145.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 146.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 147.svg"></nuxt-link>
-          <nuxt-link to="/" exact><img class="row" src="/img/logo/svg-parts/Element 148.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 115.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 116.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 117.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 118.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 119.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 120.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 121.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 122.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 123.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 124.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 125.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 126.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 127.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 128.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 129.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 130.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 131.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 132.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 133.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 134.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 135.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 136.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 137.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 138.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 139.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 140.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 141.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 142.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 143.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 144.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 145.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 146.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 147.svg"></nuxt-link>
+          <nuxt-link to="/" exact><img class="row" src="img/logo/svg-parts/Element 148.svg"></nuxt-link>
         </div>
       </div>
     </div>

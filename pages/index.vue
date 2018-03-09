@@ -102,7 +102,7 @@ export default {
         {
           title: `Bringt uns unsere Tassen zurück!`,
           intro: `Jede*r kennt es, wir holen uns morgens um 8 Uhr einen Kaffee, Tee oder Kakao in der Cafeteria. In der nächsten Pause gehen wir ins Casino und holen uns die nächste Ration unseres favorisierten Heißgetränks.`,
-          image: `/img/tassen-zurueck.jpg`,
+          image: `img/tassen-zurueck.jpg`,
           link: `/articles/beitrag-tassen`,
           meta: {
             author: `Nicht Alle Tassen im Schrank`,
@@ -112,7 +112,7 @@ export default {
         {
           title: `Arbeitsraum: 404 Not Found`,
           intro: `Gerade befinde ich mich in einem Auslandssemester in Amsterdam und eigentlich ist die FH;P gedanklich so weit entfernt, dass es mich gerade selbst verwundert, dass ich mich mit ihr beschäftige.`,
-          image: `/img/404-beitragsbild-1.jpg`,
+          image: `img/404-beitragsbild-1.jpg`,
           link: `/articles/arbeitsraum-404`,
           meta: {
             author: `Martin Naundorf`,
@@ -122,7 +122,7 @@ export default {
         {
           title: `Die Bienenwabe`,
           intro: `Seit Mitte Dezember sieht das Foyer im Hauptgebäude ganz anders aus. Die futuristischen Möbel, die vor der Bibliothek stehen, sind das Ergebnis des Wettbewerbs „Ergonomischer Loungebereich“, an dem drei Startups von Design-Absolvent*innen der FH teilnahmen.`,
-          image: `/img/die-bienenwabe.jpg`,
+          image: `img/die-bienenwabe.jpg`,
           link: `#`,
           meta: {
             author: `Nikolas Ripka`,
@@ -132,7 +132,7 @@ export default {
         {
           title: `Die Goldenen Zwanziger`,
           intro: `Unter dem Motto „die Goldenen Zwanziger“ möchte die Hochschule am 19. Januar ihre 25 Jahre mit einem Ball feiern. Zum ersten Mal sind in diesem Semester alle Fachbereiche auf einem Campus.`,
-          image: `/img/Hochschulball-Cover-c-2.png`,
+          image: `img/Hochschulball-Cover-c-2.png`,
           link: `#`,
           meta: {
             author: `Nikolas Ripka`,
@@ -142,7 +142,7 @@ export default {
         {
           title: `nextbike 2016 – FH;P-Studierende sind unterwegs`,
           intro: `Laut einer Umfrage des AStA im SoSe 2017 haben 62,9% der Teilnehmenden schon einmal etwas von nextbike gehört, 10,8% haben schon einmal ein Fahrrad ausgeliehen und 16,2% nutzen es sogar regelmäßig.`,
-          image: `/img/nextbike-auswertung.png`,
+          image: `img/nextbike-auswertung.png`,
           link: `#`,
           meta: {
             author: `Rufus`,
@@ -152,7 +152,7 @@ export default {
         {
           title: `Und dann kam der Döner`,
           intro: `Direkt gegenüber Haus 1 eröffnete diese Woche das „Bistro Femo“ in der Georg-Hermann-Allee. Wo vor wenigen Monaten noch ein Copyshop war, gibt es ab sofort etwas Herzhaftes zu essen.`,
-          image: `/img/bistro-femo-6.jpg`,
+          image: `img/bistro-femo-6.jpg`,
           link: `#`,
           meta: {
             author: `Nikolas Ripka`,
@@ -162,7 +162,7 @@ export default {
         {
           title: `Und dann wurde es still in der FES`,
           intro: `Mit dem Umzug des Fachbereichs Sozial- und Bildungswissenschaften ist nun der letzte Fachbereich an den Campus Kiepenheuerallee gezogen. Allmählich wird es ganz still im alten FH-Gebäude am Alten Markt.`,
-          image: `/img/fes-bilder-30.jpg`,
+          image: `img/fes-bilder-30.jpg`,
           link: `#`,
           meta: {
             author: `Semikolon-Redaktion`,
@@ -172,7 +172,7 @@ export default {
         {
           title: `Pappbecher kostet extra`,
           intro: `Ab dem 1. August zahlt man in der Mensa und Cafeteria 10 Cent mehr für Heißgetränke im Pappbecher.`,
-          image: `/img/cafeteria-1024x683.jpg`,
+          image: `img/cafeteria-1024x683.jpg`,
           link: `#`,
           meta: {
             author: `Nikolas Ripka`,
@@ -182,7 +182,7 @@ export default {
         {
           title: `Kein Zeichen für alle.`,
           intro: `An der Fachhochschule wurde laut die Debatte über das Stille Örtchen geführt. Und selbst nachdem die „Toilette für alle“ an der FHP beschlossene Sache ist, können viele diese Debatte und der auslösende Problematik nicht nachvollziehen.`,
-          image: `/img/toilette-fuer-alle.jpg`,
+          image: `img/toilette-fuer-alle.jpg`,
           link: `#`,
           meta: {
             author: `Martin Naundorf`,

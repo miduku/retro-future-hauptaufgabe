@@ -8,8 +8,8 @@
 
         <div class="divcontainer text">
             <div class="bild-container">
-                <img class="logogif" src="/img/titel-404.gif">
-            </div>                
+                <img class="logogif" src="img/titel-404.gif">
+            </div>
             <div class="text--container">
                 <div id="b1">
                     <p class="block rellax">
@@ -45,7 +45,7 @@
             <div class="text--container">
                 <div id="b5">
                     <p class="block bigcaption rellax" data-rellax-speed="3">
-                        Und dann gäbe es da ja auch noch die Mensa und die Cafeteria. Und wie man schon aus den Namen ableiten kann, sind beide <strong>nicht fürs Arbeiten geschaffen.</strong>
+                        Und dann gäbe es da ja auch noch die Mensa und die Cafeteria. Und wie man schon aus den Namen ableiten kann, sind beide <strong><a href="/ed/index.html">nicht fürs Arbeiten geschaffen</a>.</strong>
                     </p>
                 </div>
             </div>
@@ -93,9 +93,12 @@ export default {
         max-width: none;
         padding: 0;
     }
+    a {
+      color: #fff;
+    }
     .container > article {
         background-color: #000;
-        background-image: url(/img/querlayout-3.png);
+        background-image: url('img/querlayout-3.png');
         background-repeat: no-repeat;
         background-size: contain;
         height: 370.950rem;

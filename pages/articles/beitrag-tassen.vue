@@ -58,7 +58,7 @@ export default {
 
   data () {
     return {
-      backgroundImage: '/img/tassen-zurueck.jpg',
+      backgroundImage: 'img/tassen-zurueck.jpg',
       glitchParams: {
         amount: 35,
         iterations: 20,
