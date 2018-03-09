@@ -98,7 +98,7 @@ export default {
     }
     .container > article {
         background-color: #000;
-        background-image: url('img/querlayout-3.png');
+        background-image: url('/img/querlayout-3.png');
         background-repeat: no-repeat;
         background-size: contain;
         height: 370.950rem;

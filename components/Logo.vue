@@ -171,12 +171,12 @@ export default {
       width: 14.750em;
       height: 7em;
 
-      &:focus,
-      &:hover {
-        .row {
-          // transform: translate(0, 0) !important;
-        }
-      }
+      // &:focus,
+      // &:hover {
+      //   .row {
+      //     transform: translate(0, 0) !important;
+      //   }
+      // }
     }
 
     a {

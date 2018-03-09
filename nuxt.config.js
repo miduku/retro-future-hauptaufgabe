@@ -14,7 +14,8 @@ module.exports = {
     ]
   },
   router: {
-    base: '/future-retro/smkl/'
+    // base: '/future-retro/smkl/'
+    base: '/'
   },
 
   /*
@@ -29,8 +30,8 @@ module.exports = {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    { src: '~/plugins/rellax', ssr: false },
-    // { src: '~/plugins/parallax-js', ssr: false }
+    // { src: '~/plugins/parallax-js', ssr: false },
+    { src: '~/plugins/rellax', ssr: false }
   ],
 
   /*
@@ -44,9 +45,9 @@ module.exports = {
   */
   build: {
     vendor: [
+      // 'parallax-js',
       'axios',
-      'rellax',
-      // 'parallax-js'
+      'rellax'
     ],
 
     /*
